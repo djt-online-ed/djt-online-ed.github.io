@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+  </head>
+  <body>
+	<table><tr><td>
+	<b>Solution:</b><br>
+		There are initially \( 2^8 \) = 256 possible tiles. Most of these will be rotations of each other, but some will have less rotationally symmetric partners.<br>
+		There are 4 tiles which have 90 degree symmetry and thus no partners;<br>
+		and there are 6 tiles which have 180 degree symmetry, and thus come in twos. (See image)<br>
+		<img src = "201708sol.png" style = "width:50%;"><br>
+		The rest will come in fours.<br><br>
+		
+		Split the 256 tiles along these symmetries:<br>
+		4 + 12 + 240<br>
+		And divide each total by its number of partners:<br>
+		4 + 6 + 60<br>
+		For a total of 70 distinct tiles.<br><br>
+		
+		(These tiles form the basis for the solitaire tile game Izzi.)
+	</td></tr></table>
+  </body>
+</html>

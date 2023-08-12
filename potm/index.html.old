@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WSU Math Department's Problem of the Month</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+  </head>
+  <body>
+	<br>
+	<h1>WSU Math Department's <br> Problem of the Month</h1>
+  
+	<table>
+		<tr>
+			<td>
+				<div><h2>Current problem</h2></div>
+				<br><b>Arithmetic cuts</b><br><br>
+				The square with vertices (0,0), (0,4), (4,4), and (4,0) is divided in half by area by the line y=x. Find the y=mx+b form of the line which, along with y=x, divides the square into four regions with areas of precisely 1,3,5, and 7, as in the picture.<br>
+	
+				<img src="201810img.png" style="width:50%;"><br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div><h2>Previous problem</h2></div>
+				<br>
+				<b>Lucky numbers</b><br>
+				<br>On a lottery ticket, there are 5 distinct integers from 1 to 50 inclusive, in no particular order. Among the numbers on the ticket:<br><br>
+
+The first number is the only perfect square.<br>
+The second number is the only perfect cube.<br>
+The third number is the only even number.<br>
+The fourth number is the only prime number.<br>
+The fifth number is the sum of the other four numbers.<br><br>
+
+Determine the five numbers.<br>
+<a href="201809sol.html">Solution</a>
+			</td>
+		</tr>
+		<tr>
+			<td> 
+				<div><h2>Rules</h2></div>
+				<ul>
+					<li>Problem of the Month is open only to undergraduate students enrolled in coursework at WSU. A new problem will be displayed the first day of each month of the fall and spring semesters.</li>
+					
+					<li>How to format your entry:</li>
+					<ul>
+						<li>Include your full name, MYWSU ID, email address, and date and time of your 	submission.</li>
+						<li>Write an answer to the problem and all work taken to get there. Your solution will only be correct if the answer is correct and if the steps lead logically to the answer.</li>
+						<li>Either write your solution on paper, or type it using a word processor and equation editor.</li>
+					</ul>
+										
+					<li>How to submit:</li>
+					<ul>
+						<li>You can submit a written or printed version to the Math Office (Jabara 355) on the main campus and give it to one of the administrative assistants to place in the Problem Solving Competition box...</li>
+						<li>...Or you can scan/photograph your solution and/or export it as a PDF (or other readable format), then send me an email at the address at the bottom of this page. Title your email "POTM solution MM/YY" (replace MM/YY with the current month/year) and add the file containing your solution as an attachment(s).</li>
+					</ul>
+		
+					<li>You can submit multiple times, but only your most recent entry (and the date/time of its submission) will be accepted as your entry, whether correct or incorrect.</li>
+
+					<li>All students with a correct solution will be listed on this page, with #1 being the quickest, #2 the next, etc.</li>
+					
+				</ul>
+				Feeling creative? Want to write a problem for POTM? Format and send your problem idea to me at with subject "POTM problem proposal" to the email at the bottom of this page. Attach the problem along with your solution (steps and answer). If the problem was not plagiarized, and the problem is appropriate for undergraduate math, and the solution is correct, I will consider using it in a future POTM, with your name credited as the author.
+			</td>
+		</tr>
+	</table>
+	<h1><a href="previous.html">Previous problems and solvers</a></h1> 
+	<h1>Send problem solutions and proposals to:</h1>
+	<h1><a href="mailto:trousdale@math.wichita.edu">trousdale@math.wichita.edu</a></h1>
+	<br>
+
+  </body>
+</html>

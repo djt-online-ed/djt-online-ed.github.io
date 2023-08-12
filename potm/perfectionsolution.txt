@@ -1,0 +1,126 @@
+Call a triangle "perfect" if it is a right triangle with equal perimeter and area.
+
+Algebra:
+Find all perfect triangles with integer side lengths.
+
+Trigonometry:
+Find a perfect triangle with an angle of 60 degrees.
+
+Calculus:
+Find a perfect triangle with minimum area.
+
+
+
+
+
+Solution:
+
+If c is the hypotenuse, then we have the following facts:
+
+a,b,c are positive integers
+a^2 + b^2 = c^2
+a+b+c = ab/2
+
+In this last equation, let c = sqrt(a^2+b^2).
+
+a+b+sqrt(a^2+b^2) = ab/2
+sqrt(a^2+b^2) = ab/2 - a - b
+2 sqrt(a^2+b^2) = ab - 2a - 2b
+
+4aa + 4bb = aabb + 4aa + 4bb + 8ab - 4aab - 4abb
+0 = aabb + 8ab - 4aab - 4abb
+0 = ab(ab - 4a - 4b + 8)
+
+By zero products, since a,b > 0, we need
+
+ab - 4a - 4b + 8 = 0
+ab - 4a - 4b + 16 = 8
+(a-4)(b-4) = 8
+
+So we need a-4 and b-4 to be positive integers that multiply to 8. There are two options: 1 and 8, or 2 and 4.
+
+a-4=1 -> a=5
+b-4=8 -> b=12
+
+Which gives the 5-12-13 right triangle (area = perimeter = 30)
+
+a-4=2 -> a=6
+b-4=4 -> b=8
+
+Which gives the 6-8-10 right triangle (area = perimeter = 24).
+
+
+
+
+Trigonometry:
+
+A right triangle with a 60 degree angle is a 30-60-90 triangle with special properties. The sides short:hyp:long are in the ratio 1:2:sqrt(3). Let the short leg be a and the long leg be sqrt(3)a.
+Setting perimeter equal to area:
+
+(1+2+sqrt3)a = sqrt(3)/2 a^2
+
+(3+sqrt(3)) = sqrt(3)/2 a
+
+2(3+sqrt(3))/sqrt(3) = a
+
+a = 2sqrt(3)(3+sqrt(3))/3 = (6sqrt(3) + 6)/3 = 2sqrt(3) + 2. Then...
+b = sqrt(3)(2sqrt(3)+2) = 2sqrt(3) + 6
+c = 4sqrt(3) + 4
+
+
+
+Calculus:
+
+We want to minimize (1/2)ab, and from the algebra solution, we need (a-4)(b-4) = 8. So b = 8/(a-4) + 4.
+
+A = (1/2)a(8/(a-4)+4)
+A = (1/2)a(4a-8)/(a-4)
+A = (2aa-4a)/(a-4)
+
+Using optimization,
+A' = [(a-4)(4a-4) - (2aa-4a)]/(a-4)^2
+
+The critical points are the zeros of the numerator and denominator. a=4 would mean (4-4)(b-4)=8 or 0=8, so we reject this and instead look at the numerator.
+
+4aa - 4a - 16a + 16 - 2aa + 4a = 0
+2aa - 16a + 16 = 0
+aa - 8a + 8 = 0
+
+a = [8 +- sqrt(64 - 32)]/2
+a = 4 +- 2sqrt(2)
+
+4 - 2sqrt(2) doesn't check (it leads to an area of less than 1 and a perimeter of 4).
+so we need a = 4 + 2sqrt(2).
+
+Then (4 + 2sqrt(2) - 4)(b-4) = 8
+
+2sqrt(2)(b-4) = 8
+(b-4) = 2sqrt(2)
+b = 2sqrt(2) - 4
+
+So our triangle is right isosceles, a 45-45-90 triangle, with area and perimeter (2+sqrt(2))(4+2sqrt(2)) = 12 + 8sqrt(2).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

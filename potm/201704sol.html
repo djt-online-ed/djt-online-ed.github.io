@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+  </head>
+  <body>
+	<table><tr><td>
+	<b>Solution:</b><br>
+	Instead of A,B,C,D, number the circles 1,2,3,4, respectively.<br>
+	Descarte's Theorem states that if four circles are all mutually tangent, then:<br>
+	$$(k_1 + k_2 + k_3 + k_4)^2 = 2(k_1^2 + k_2^2 + k_3^2 + k_4^2)$$
+	Where \( k_i \) is the curvature (reciprocal of the radius) of circle \( i\). This is usually stated in a form solved for \(k_4\):<br>
+	$$k_4 = k_1 + k_2 + k_3 \pm 2 \sqrt{k_1 k_2 + k_2 k_3 + k_3 k_1}$$
+	Relative to circle 4, the three circles have curvatures \( \frac11, \frac12, -\frac13. \)<br>
+	Then, <br>
+	$$k_4 = \frac11 + \frac12 - \frac13 \pm 2 \sqrt{\frac11(\frac12) - \frac12(\frac13) - \frac13(\frac11)}$$
+	$$k_4 = \frac76 \pm 2 \sqrt{0}$$
+	$$k_4 = \frac76$$
+	Therefore the radius of the fourth circle is \( \frac67 \).
+	</td></tr></table>
+  </body>
+</html>

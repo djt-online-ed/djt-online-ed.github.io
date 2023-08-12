@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+    </script>
+  </head>
+  <body>
+	<table><tr><td>
+	<b>Solution:</b><br>
+		The cube can only be 1, 8, or 27. It is not 1 since 1 also qualifies as a perfect square, nor 8 since it's even. So the cube is 27.<br>
+		The square, which can only be odd, could be 1,9,25,49. 1 is a cube so is excluded. 49 is too large; given the minimum values of the other numbers the sum would exceed 50 (and the sum must also be a valid number on the ticket.) 25 is excluded for the same reason; 27+25 exceeds 50. Therefore the square is 9.<br><br>
+
+		Currently we have 27 and 9. Either of the prime or even number can be 14 at the maximum. This leaves:<br>
+		Primes: 3,5,7,11,13<br>
+		Evens: 6,10,12,14 (2 is prime!)<br><br>
+
+		Throwing out more numbers that will lead to a total exceeding 50, we have<br>
+		Primes: 3,5,7<br>
+		Evens: 6,10<br><br>
+
+		Considering all possible choices, the sum could be 45, 47, or 49. But since 49 is square and 47 is prime, 45 is the only possible sum, and this leads us to the five numbers:<br>
+		<b>3,6,9,27,45</b>
+	</td></tr></table>
+  </body>
+</html>
