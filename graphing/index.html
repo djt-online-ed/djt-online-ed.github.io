@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Positive Expectations for Mathematics</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async>
+	</script>
+	<style>
+		div.gallery {
+		  margin: 5px;
+		  border: 1px solid #ccc;
+		  /*float: left;*/
+		  width: 300px;
+		}
+		
+		div.gallery:hover {
+		  border: 1px solid #777;
+		}
+
+		div.gallery img {
+		  width: 100%;
+		  height: auto;
+		}
+
+		div.desc {
+		  padding: 15px;
+		  text-align: center;
+		}
+	</style>
+  </head>
+
+<a href="..">Home</a>
+
+<h1 align="center">Graphing guides</h1>
+
+Mathvault's <a href="https://mathvault.ca/desmos-guide/">Desmos: A definitive guide on graphing and computing</a> is a great introduction to using Desmos.<br><br>
+
+For Calculus (Stewart, Clegg and Watson, 8th edition) I often use Desmos and other applications in class to demonstrate. Links to specific Desmos visualizations are (c) their respective creators.</p>
+<p>Chapter 1</p>
+<p>Piecewise functions: Enter <code>y = {condition1 : definition1, condition2 : definition2, ...}</code> For instance, <code>y = {x<0: 1-x, x>0: x^2-1}</code></p>
+<p>Chapter 2</p>
+<p>Derivative: Define a function like <code>f(x) = x^2</code>. Then in another row, type <code>f'(x)</code> to see its derivative. Desmos also recognizes <code>d/dx (f(x))</code>.</p>
+<p>Derivative intuition: <a href="https://www.desmos.com/calculator/fzjicbxmtr">https://www.desmos.com/calculator/fzjicbxmtr</a></p>
+<p>Implicit curves: In any row, enter any equation in x and y and watch the fireworks. Examples to try: </p>
+<p><code>1 = (x^2-1)(y^2-2)(x^2-3)(y^2-4)</code></p>
+<p><code>sin(x) + sin(y) = sin(xy)</code></p>
+<p>Chapter 4</p>
+<p>Riemann Sums: <a href="https://www.desmos.com/calculator/cxsfmpvf69">https://www.desmos.com/calculator/cxsfmpvf69</a> 
+(Set c = 1/2 for a midpoint estimate!)</p>
+<p>Integral: Define a function like <code>f(x) = x^2</code>. Then in another row, type <code>int</code> to create the integral symbol. Use the arrow keys to select the lower endpoint. Type 0 there. Use the arrow keys to select the upper endpoint. Type x there. Use the arrow keys to put the cursor just to the right of the integral sign, and type <code>f(t) dt</code>. Recall that the indefinite integral is not unique, but requires an arbitrary constant C. Type +C at the end and create a slider for C when prompted, and you can browse the family of indefinite integrals for the function.</p>
+<p>Chapter 5</p>
+<p>Solids of revolution about x-axis: <a href="https://www.desmos.com/calculator/ay2hke1x9c">https://www.desmos.com/calculator/ay2hke1x9c</a></p>
+<p>Solids of revolution about y-axis: <a href="https://www.desmos.com/calculator/uxuttnonb1">https://www.desmos.com/calculator/uxuttnonb1</a></p>
+<p>Chapter 9</p>
+<p>Slope field generator: <a href="https://www.desmos.com/calculator/tmi3vk4r84">https://www.desmos.com/calculator/tmi3vk4r84</a></p>
+<p>Chapter 10</p>
+<p>Parametric curves: Enter x(t) and y(t) as an ordered pair. For instance, to graph x(t) = sin(4t) and y(t) = cos(5t), enter in a row <code>(sin(4t), cos(5t))</code>. Choose endpoints for t to see more of the graph.</p>
+<p>Parametric trace: To see a point trace out the parametric curve mentioned above, enter:</p>
+<p><code>f(t) = sin(4t)</code></p>
+<p><code>g(t) = cos(5t)</code></p>
+<p><code>(f(t), g(t))</code> displays the whole curve.</p>
+<p><code>(f(T), g(T))</code> plots a point. Create a slider for T when prompted. Drag the slider for T to move the point along the curve.</p>
+<p>Polar point: Desmos always plots ordered pairs as (x,y) Cartesian. To plot a polar point (r, theta), first enter <code>R = 0</code> and <code>T = 0</code> and create sliders when prompted. Then enter <code>(R cos T, R sin T)</code> to plot the polar point.</p>
+<p>Polar curves: Desmos has a built-in ability to plot polar curves of the form r = f(theta). Just enter something like <code>r = theta/4</code>.</p>
+<p>Polar graph trace: Follow the instructions for polar point and polar curves, except define R in terms of T according to the curve. For instance, instead of <code>R = 0</code>, enter <code>R = T/4</code>. Move the slider for T to trace the point along the polar curve.</p>
+<p>Chapter 11</p>
+<p>Sequences: Ordinary sequence notation looks like a_n, but Desmos doesn't recognize this as a sequence. Type, for instance, <code>a(n) = 1/n</code> (All sequences are just a special kind of function.) On another row enter <code>N = [1,2,...,40]</code>. On another row enter <code>(N, a(N))</code>. You can compare this with another sequence, for instance, <code>b(n) = 1/sqrt(n)</code> and then <code>(N,b(N))</code>.</p>
+<p>Series: Follow the instructions for sequences above. Then enter <code>c(m) = sum</code> to create a Sigma. Enter 1 in the lower bound. Select the upper bound and type <code>m</code>. To the right of the Sigma, enter <code>a(n)</code>. On a new row type <code>(N, c(N))</code>. Change a(n) to compare various sequences to their summations.</p>
+<p>Chapter 12</p>
+<p>Desmos doesn't yet have a built-in 3d graphing suite, but Geogebra does. <a href="https://www.geogebra.org/3d">https://www.geogebra.org/3d</a></p>
+<p>Point: Enter as an ordered triple. (1,2,3)</p>
+<p>Line: (Ordered triple) + (Ordered triple) t. For instance, <code>(1,2,3) + (4,5,6)t</code></p>
+<p>Line: An ordered triple made of functions of t: (f(t), g(t), h(t)). For instance, <code>(1+t, -2t, 3)</code>.</p>
+<p>Line: Symmetric equations in x,y,z. For instance, <code>(x-1)/5 = (y+2)/4 = z/3</code></p>
+<p>Vector: Vector(point as ordered triple). For instance, <code>Vector((1,2,3))</code></p>
+<p>Plane: Linear equation in x,y,z. For instance, <code>5x-4y+3z=2</code></p>
+
+
+
+
+
+<h1 align="center">Bugzapper</h1>
+
+This game is based on a computer game called Green Globs. Rules are explained in the frame below. Whatever math class you're in, you can play this game to practice graphing all kinds of equations.<br><br>
+
+<a href="https://www.desmos.com/calculator/4ucwyozmbj">For best results, here is a direct link to the page.</a> This game works best on a desktop or laptop, not so well on mobile devices.<br><br>
+
+<iframe src="https://www.desmos.com/calculator/4ucwyozmbj" width="100%" height="800px" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+<!--
+<h1>Gallery</h1>
+
+Sometimes I will give classes a particular game in order to practice objectives. Here are some screenshots of highest-scoring graphs among my classes. <br> <br>
+
+<div class="gallery">
+  <a target="_blank" href="2020a112.png">
+    <img src="2020a112.png" alt="" width="600px" height="400px">
+  </a>
+  <div class="desc">530 points<br>Game 3, Bugs 15, Difficulty 1<br>David Nguyen, Johnny Dao<br>Math 112 Spring 2020</div>
+</div>
+<br><br>
+-->
+
+<a href="..">Home</a>
+
+</html>
