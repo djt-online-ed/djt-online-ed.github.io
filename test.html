@@ -1,26 +1,60 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Daniel Trousdale - Student Resources</title>
+<head>
+	<title>Daniel Trousdale - Student Resources</title>
     <meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
-  	<script type="text/javascript" src="./markdown-tag.js"></script>
-  </head>
+</head>
 <body>
+	<textarea id="markdowntext" style="display: none;">
 
-<md>
-Test
-*Italic*
-**Bold**
-</md>
+Markdown
+=========
 
-<github-md>
-Test
-*Italic*
-**Bold**
-</github-md>
+Headings, Paragraphs, and Styling
+--------
+H2 headings are separated by a single dash, or an equals sign for an H1 headdding.
+
+Paragraphs are separated by a blank line.
+
+2nd paragraph. *Italic*, **bold**, ~~strikethrough~~, `monospace`. Itemized lists
+look like:
+
+  * this one
+  * that one
+  * the other one
+
+Here's a numbered list:
+
+ 1. first thing
+ 2. second thing
+ 3. third thing
+
+## Markdown Tables##
+
+| $$ x $$    | $$ f(x) = 2x+3 $$ |
+|-------- | ----------------|
+|3        | 9               |
+|-1       | 1               |
 
 
-<script type="text/javascript" src="./markdown-tag.js"></script>
+  </textarea>
+  <div id="view"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.3.0/showdown.min.js"></script>
+  <script>
+    var converter = new showdown.Converter();
+    converter.setOption('simplifiedAutoLink', true);
+    converter.setOption('tables', true);
+    var convert = function() {
+      $('#view').html(converter.makeHtml($('#markdowntext').val()));
+    };
+    convert();
+  </script>
+  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+  <script> hljs.initHighlightingOnLoad(); </script>
+  
 </body>
+
 </html>
