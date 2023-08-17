@@ -3,7 +3,7 @@
 <head>
 	<title>Daniel Trousdale - Student Resources</title>
     <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<textarea id="markdowntext" style="display: none;">
@@ -13,12 +13,12 @@ Markdown
 
 Headings, Paragraphs, and Styling
 --------
-H2 headings are separated by a single dash, or an equals sign for an H1 headdding.
+
+H2 headings are separated by a single dash, or an equals sign for an H1 heading.
 
 Paragraphs are separated by a blank line.
 
-2nd paragraph. *Italic*, **bold**, ~~strikethrough~~, `monospace`. Itemized lists
-look like:
+2nd paragraph. *Italic*, **bold**, ~~strikethrough~~, `monospace`. Itemized lists look like:
 
   * this one
   * that one
@@ -30,10 +30,11 @@ Here's a numbered list:
  2. second thing
  3. third thing
 
-## Markdown Tables##
+Tables
+------
 
 | $$ x $$    | $$ f(x) = 2x+3 $$ |
-|-------- | ----------------|
+|:------: | :------------:|
 |3        | 9               |
 |-1       | 1               |
 
@@ -46,12 +47,10 @@ Here's a numbered list:
     var converter = new showdown.Converter();
     converter.setOption('simplifiedAutoLink', true);
     converter.setOption('tables', true);
-    var convert = function() {
-      $('#view').html(converter.makeHtml($('#markdowntext').val()));
-    };
+    var convert = function() { $('#view').html(converter.makeHtml($('#markdowntext').val())); };
     convert();
   </script>
-  <script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
   <script> hljs.initHighlightingOnLoad(); </script>
   
