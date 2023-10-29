@@ -1,0 +1,50 @@
+
+
+
+
+a,b,n are three randomly chosen characters from: "123456789abcdhjkmnpqrstuvwxyz", at least one of which is a letter
+
+True means "True ALL the time."
+False means "Sometimes false, even if only once."
+
+1:
+
+(A+B)N = AN+BN
+N(A+B) = NA+NB
+(A-B)N = AN-BN
+N(A-B) = NA-NB
+\dfrac{(A+B)}{N} = \dfrac{A}{N} + \dfrac{B}{N}
+\dfrac{(A-B)}{N} = \dfrac{A}{N} - \dfrac{B}{N}
+(AB)^N = A^NB^N
+(\dfrac{A}{B})^N = \dfrac{A^N}{B^N}
+\sqrt[N]{AB} = \sqrt[N]{A} \sqrt[N]{B}
+\sqrt[N]{\dfrac{A}{B}} = \dfrac{\sqrt[N]{A}}{\sqrt[N]{B}}
+
+0:
+
+\dfrac{N}{A+B} = \dfrac{N}{A} + \dfrac{N}{B}
+\dfrac{N}{A-B} = \dfrac{N}{A} - \dfrac{N}{B}
+N^{AB} = N^{A} N^{B}
+N^{A/B} = \dfrac{N^A}{N^B}
+(A+B)^N = A^N + B^N
+(A-B)^N = A^N - B^N
+\sqrt[N]{A+B} = \sqrt[N]{A} + \sqrt[N]{B}
+\sqrt[N]{A-B} = \sqrt[N]{A} - \sqrt[N]{B}
+A+(B+N) = A+B + A+N
+A(BN) = (AB)(AN)
+A+(BN) = (A+B)(A+N)
+A(B^N) = AB^{(AN)}
+A+B^N = (A+B)^{(A+N)}
+
+
+
+Additionally: An operation does not distribute over itself OR its counterpart. If I included every single variation we might be here a while.
+
+1:
+A(B/N) = AB/N
+
+0:
+A(B/N) = (AB)/(AN)
+A(B/N) = B/(AN)
+
+But this could wrap in some canceling right/wrongs.
