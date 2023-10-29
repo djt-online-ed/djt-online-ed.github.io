@@ -1,102 +1,76 @@
-const numbers = "123456789"
-const letters = "abcdhjkmnpqrstuvwxyz"
+const variables = "23456789abcdhjkmnpqrstuvwxyz"
 
-const trues = ["(A+B)N = AN+BN", "N(A+B) = NA+NB", "(A-B)N = AN-BN", "N(A-B) = NA-NB", "\dfrac{(A+B)}{N} = \dfrac{A}{N} + \dfrac{B}{N}", "\dfrac{(A-B)}{N} = \dfrac{A}{N} - \dfrac{B}{N}", "(AB)^N = A^NB^N", "(\dfrac{A}{B})^N = \dfrac{A^N}{B^N}", "\sqrt[N]{AB} = \sqrt[N]{A} \sqrt[N]{B}", "\sqrt[N]{\dfrac{A}{B}} = \dfrac{\sqrt[N]{A}}{\sqrt[N]{B}}"]
-const falses = ["\dfrac{N}{A+B} = \dfrac{N}{A} + \dfrac{N}{B}", "\dfrac{N}{A-B} = \dfrac{N}{A} - \dfrac{N}{B}", "N^{AB} = N^{A} N^{B}", "N^{A/B} = \dfrac{N^A}{N^B}", "(A+B)^N = A^N + B^N", "(A-B)^N = A^N - B^N", "\sqrt[N]{A+B} = \sqrt[N]{A} + \sqrt[N]{B}", "\sqrt[N]{A-B} = \sqrt[N]{A} - \sqrt[N]{B}", "A+(B+N) = A+B + A+N", "A(BN) = (AB)(AN)", "A+(BN) = (A+B)(A+N)", "A(B^N) = AB^{(AN)}", "A+B^N = (A+B)^{(A+N)}"]
+const trues = [
+"(A+B)N = AN+BN", 
+"N(A+B) = NA+NB", 
+"(A-B)N = AN-BN", 
+"N(A-B) = NA-NB", 
+"\\dfrac{(A+B)}{N} = \\dfrac{A}{N} + \\dfrac{B}{N}", 
+"\\dfrac{(A-B)}{N} = \\dfrac{A}{N} - \\dfrac{B}{N}", 
+"(AB)^N = A^NB^N", 
+"(\\dfrac{A}{B})^N = \\dfrac{A^N}{B^N}", 
+"\\sqrt[N]{AB} = \\sqrt[N]{A} \\sqrt[N]{B}", 
+"\\sqrt[N]{\\dfrac{A}{B}} = \\dfrac{\\sqrt[N]{A}}{\\sqrt[N]{B}}"
+]
+const falses = [
+"\\dfrac{N}{A+B} = \\dfrac{N}{A} + \\dfrac{N}{B}",
+"\\dfrac{N}{A-B} = \\dfrac{N}{A} - \\dfrac{N}{B}",
+"N^{AB} = N^{A} N^{B}",
+"N^{A/B} = \\dfrac{N^A}{N^B}",
+"(A+B)^N = A^N + B^N",
+"(A-B)^N = A^N - B^N",
+"\\sqrt[N]{A+B} = \\sqrt[N]{A} + \\sqrt[N]{B}",
+"\\sqrt[N]{A-B} = \\sqrt[N]{A} - \\sqrt[N]{B}",
+"A+(B+N) = A+B + A+N",
+"A(BN) = (AB)(AN)",
+"A+(BN) = (A+B)(A+N)",
+"A(B^N) = AB^{(AN)}",
+"A+B^N = (A+B)^{(A+N)}"
+]
 
-var answer = 35;
+const truefalse = [trues, falses]
+
+var which = 0;
 var attempts = -1;
 var lastfew = []
 var label;
 var newtext;
 
-function onLoad() {
-
+function onLoad() { 
 	label = document.getElementById("problemLabel");
-	choicefield = document.getElementById("choices");
-	for (x in ["True", "False"]){
-		choicefield.innerHTML += "<button type=\"button\" onclick=\"checkAnswer(" + x + ")\"> \\(" + rootchoices[x] + "\\)  </button>";
-	}
-
-	newDist()
+	newDist();
 }
-
 
 function randint(n){return Math.floor(Math.random()*n)} //Generates an integer from 0 to n-1 inclusive)
 
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex; // While there remain elements to shuffle.
+  while (currentIndex > 0) { // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--; // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+  return array;
+}
+
+
 function newDist() {
-
-	var trigs = document.getElementsByName("trigopts");
-	var l = 0;
-	for (i in trigs) { if (trigs[i].checked) {l += 1;} }
-	if (l==0) { label.innerHTML = "Check at least one trig function above"; return(false); }
-
-	if (attempts == 0) {checkAnswer(-12)}
-	attempts = 0
-
-	var whichtrig = -1;
-	do { whichtrig = randint(6) } while (!((trigs[whichtrig]).checked))
-		
-	var moreangles = document.getElementById("moreangles");
-	var coterm = 12*(randint(11) - 5)
-	var num = 1;
-	do { num = randint(24) } while (num%6 == 1 || num%6 == 5)
-	var denom = 12;
-	if (moreangles.checked) {num += coterm}
-	g = gcd(num,denom);
-	num = num / g;
-	denom = denom / g;
-	var rad = num * Math.PI / denom
-	
-	srad = Math.sin(rad);
-	crad = Math.cos(rad);
-	if (Math.abs(srad) < 10e-7) {srad = 0}
-	if (Math.abs(crad) < 10e-7) {crad = 0}
-	trad = srad/crad;
-	cotrad = crad/srad;
-	
-	switch(whichtrig){
-		case 0: answer = srad; break;
-		case 1: answer = crad; break;
-		case 2: answer = trad; break;
-		case 3: answer = 1/crad; break;
-		case 4: answer = 1/srad; break;
-		case 5: answer = cotrad; break;
-	}
-	
-	newtext = num + "\\pi"
-	if (num==1) {newtext = "\\pi"}
-	if (num==-1) {newtext = "-\\pi"}
-	if (denom>1) {newtext = "\\dfrac{" + newtext + "}{" + denom + "}"}
-	if (num==0) {newtext = "0"}
-	
-	newtext = "\\" + trigopts[whichtrig] + "(" + newtext + ")";
-		
-	label.innerHTML = "\\(" + newtext + "\\)";
-
-	//Rewrite math
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	var which = randint(2);
+	console.log(which);
+	var a = [variables[randint(8)], variables[randint(10)+8], variables[randint(10)+18]];
+	shuffle(a);
+	newtext = truefalse[which][randint(truefalse[which].length)];
+	newtext = newtext.replace(/A/g, a[0])
+	newtext = newtext.replace(/B/g, a[1])
+	newtext = newtext.replace(/N/g, a[2])
+	label.innerHTML = "\\( \\LARGE " + newtext + "\\)";
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
 }
 
 function checkAnswer(picked) {
-
-	var a = rootchoices[picked];
-	var b = rootchoicesvalues[picked];
-	if (picked == -12) {b = -12}
-	var result = true
-	if ((Math.abs(answer-b) < 10e-8) || (!isFinite(answer) && !isFinite(b))) {
-		attempts += 1
-	}
-	else {
-		attempts += 1;
-		result = false;
-	}
 	
-	if (attempts == 1) { 
-		lastfew.push(result) 
-	}
-	
-	while (lastfew.length > 5) {lastfew.shift()}
+	while (lastfew.length > 10) {lastfew.shift()}
 	
 	var row = document.getElementById("inarow");
 	row.innerHTML = " ";
