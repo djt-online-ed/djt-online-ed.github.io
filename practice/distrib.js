@@ -39,7 +39,7 @@ var yesnolabel;
 
 function onLoad() { 
 	label = document.getElementById("problemLabel");
-	yesnolabel = document.getElementById("yesno");
+	yesnolabel = document.getElementById("yesnolabel");
 	newDist();
 }
 
