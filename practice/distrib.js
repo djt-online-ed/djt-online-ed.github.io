@@ -35,6 +35,7 @@ var attempts = -1;
 var lastfew = []
 var label;
 var newtext;
+var yesnolabel;
 
 function onLoad() { 
 	label = document.getElementById("problemLabel");
