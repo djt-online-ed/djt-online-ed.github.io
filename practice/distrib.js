@@ -70,6 +70,8 @@ function newDist() {
 
 function checkAnswer(picked) {
 	
+	result = (picked == which)
+
 	while (lastfew.length > 10) {lastfew.shift()}
 	
 	var row = document.getElementById("inarow");
