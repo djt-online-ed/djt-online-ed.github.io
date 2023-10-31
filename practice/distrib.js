@@ -74,7 +74,7 @@ function newDist() {
 function checkAnswer(picked) {
 	attempts += 1;
 	if (attempts == 1) {}
-		if (picked == which): {lastfew.push(true);}
+		if (picked == which) {lastfew.push(true);}
 		else: {lastfew.push(false);}
 
 	while (lastfew.length > 10) { lastfew.shift() ; }
