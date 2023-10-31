@@ -65,7 +65,7 @@ function newDist() {
 	newtext = newtext.replace(/A/g, a[0]) ;
 	newtext = newtext.replace(/B/g, a[1]) ;
 	newtext = newtext.replace(/N/g, a[2]) ;
-	label.innerHTML = "<br>\\( \\LARGE " + newtext + "\\)<br>";
+	label.innerHTML = "<br> \\( \\LARGE " + newtext + "\\) <br>";
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
 }
 
@@ -86,9 +86,9 @@ function checkAnswer(picked) {
 		}
 	}
 	if (result) {
-		yesno.innerHTML = "Correct!"
+		yesnolabel.innerHTML = "Correct!"
 		}
-	else {yesno.innerHTML = "Incorrect"}
+	else {yesnolabel.innerHTML = "Incorrect"}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
