@@ -38,6 +38,7 @@ var newtext;
 
 function onLoad() { 
 	label = document.getElementById("problemLabel");
+	yesnolabel = document.getElementById("yesno");
 	newDist();
 }
 
@@ -61,33 +62,33 @@ function newDist() {
 	var a = [variables[randint(8)], variables[randint(10)+8], variables[randint(10)+18]];
 	shuffle(a);
 	newtext = truefalse[which][randint(truefalse[which].length)];
-	newtext = newtext.replace(/A/g, a[0])
-	newtext = newtext.replace(/B/g, a[1])
-	newtext = newtext.replace(/N/g, a[2])
-	label.innerHTML = "\\( \\LARGE " + newtext + "\\)";
+	newtext = newtext.replace(/A/g, a[0]) ;
+	newtext = newtext.replace(/B/g, a[1]) ;
+	newtext = newtext.replace(/N/g, a[2]) ;
+	label.innerHTML = "<br>\\( \\LARGE " + newtext + "\\)<br>";
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
 }
 
 function checkAnswer(picked) {
 	
-	result = (picked == which)
+	result = (picked == which);
 
-	while (lastfew.length > 10) {lastfew.shift()}
+	while (lastfew.length > 10) { lastfew.shift() ; }
 	
 	var row = document.getElementById("inarow");
 	row.innerHTML = " ";
 	for (i in lastfew){
 		if (lastfew[i]) {
-			row.innerHTML += "<img src=\"correct.png\">"
+			row.innerHTML += "<img src=\"correct.png\">" ;
 		}
 		else {
-			row.innerHTML += "<img src=\"incorrect.png\">"
+			row.innerHTML += "<img src=\"incorrect.png\">" ;
 		}
 	}
 	if (result) {
-		label.innerHTML = "\\(" + newtext + " = " + a + "\\) Correct!"
+		yesno.innerHTML = "\\(" + newtext + " = " + a + "\\) Correct!"
 		}
-	else {label.innerHTML = "\\(" + newtext + " \\neq " + a + "\\) Incorrect, try again"}
+	else {yesno.innerHTML = "\\(" + newtext + " \\neq " + a + "\\) Incorrect, try again"}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
