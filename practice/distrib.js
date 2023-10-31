@@ -86,9 +86,9 @@ function checkAnswer(picked) {
 		}
 	}
 	if (result) {
-		yesno.innerHTML = "\\(" + newtext + " = " + a + "\\) Correct!"
+		yesno.innerHTML = "Correct!"
 		}
-	else {yesno.innerHTML = "\\(" + newtext + " \\neq " + a + "\\) Incorrect, try again"}
+	else {yesno.innerHTML = "Incorrect"}
 	
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 }
