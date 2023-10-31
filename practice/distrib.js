@@ -31,7 +31,7 @@ const falses = [
 const truefalse = [trues, falses]
 
 var which = 0;
-var attempts = -1;
+var attempts = 0;
 var lastfew = []
 var label;
 var newtext;
@@ -68,11 +68,14 @@ function newDist() {
 	newtext = newtext.replace(/N/g, a[2]) ;
 	label.innerHTML = "<br> \\( \\LARGE " + newtext + "\\) <br>";
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
+	attempts = 0
 }
 
 function checkAnswer(picked) {
-	
-	result = (picked == which);
+	attempts += 1;
+	if (attempts == 1) {}
+		if (picked == which): {lastfew.push(true);}
+		else: {lastfew.push(false);}
 
 	while (lastfew.length > 10) { lastfew.shift() ; }
 	
