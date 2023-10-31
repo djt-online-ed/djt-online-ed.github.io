@@ -73,9 +73,17 @@ function newDist() {
 
 function checkAnswer(picked) {
 	attempts += 1;
-	if (attempts == 1) {}
-		if (picked == which) {lastfew.push(true);}
-		else {lastfew.push(false);}
+	
+	if (attempts == 1) {
+		if (picked == which) {
+			yesnolabel.innerHTML = "Correct!"
+			lastfew.push(true);
+		}
+		else {
+			yesnolabel.innerHTML = "Incorrect"
+			lastfew.push(false);
+		}
+	}
 
 	while (lastfew.length > 10) { lastfew.shift() ; }
 	
@@ -89,11 +97,6 @@ function checkAnswer(picked) {
 			row.innerHTML += "<img src=\"incorrect.png\">" ;
 		}
 	}
-	if (result) {
-		yesnolabel.innerHTML = "Correct!"
-		}
-	else {yesnolabel.innerHTML = "Incorrect"}
-	
-	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
 }
 
