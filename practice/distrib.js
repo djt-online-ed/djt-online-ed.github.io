@@ -28,7 +28,7 @@ const falses = [
 "A+B^N = (A+B)^{(A+N)}"
 ]
 
-const truefalse = [trues, falses]
+const truefalse = [falses, trues]
 
 var which;
 var attempts = 0;
