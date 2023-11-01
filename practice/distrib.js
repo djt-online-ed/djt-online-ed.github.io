@@ -58,7 +58,7 @@ function shuffle(array) {
 
 
 function newDist() {
-	var which = randint(2);
+	which = randint(2);
 	var a = [variables[randint(8)], variables[randint(10)+8], variables[randint(10)+18]];
 	shuffle(a);
 	newtext = truefalse[which][randint(truefalse[which].length)];
