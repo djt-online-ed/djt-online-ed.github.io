@@ -30,7 +30,7 @@ const falses = [
 
 const truefalse = [trues, falses]
 
-var which = 0;
+var which;
 var attempts = 0;
 var lastfew = []
 var label;
@@ -59,7 +59,6 @@ function shuffle(array) {
 
 function newDist() {
 	var which = randint(2);
-	console.log(which);
 	var a = [variables[randint(8)], variables[randint(10)+8], variables[randint(10)+18]];
 	shuffle(a);
 	newtext = truefalse[which][randint(truefalse[which].length)];
@@ -72,6 +71,8 @@ function newDist() {
 }
 
 function checkAnswer(picked) {
+	console.log(picked, which);
+	
 	attempts += 1;
 	
 	if (attempts == 1) {
