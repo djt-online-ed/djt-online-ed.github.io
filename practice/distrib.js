@@ -68,10 +68,11 @@ function newDist() {
 	label.innerHTML = "<br> \\( \\LARGE " + newtext + "\\) <br>";
 	MathJax.Hub.Queue(["Typeset",MathJax.Hub]); //Rewrite math
 	attempts = 0
+	console.log("Expected answer:" + which)
 }
 
 function checkAnswer(picked) {
-	console.log(picked, which);
+	console.log("Chosen answer:" + picked);
 	
 	attempts += 1;
 	
