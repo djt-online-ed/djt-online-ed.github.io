@@ -1,0 +1,143 @@
+Mathvault's [Desmos: A definitive guide on graphing and computing](https://mathvault.ca/desmos-guide/) is a great introduction to using Desmos. I often use Desmos, Geogebra, and other applications in class to demonstrate, so here is a reference for myself and for you to play with it, organized by corresponding class textbook and chapter. Links to specific visualizations are (c) their respective creators.
+
+## Trigonometry (Larson, 11th edition)
+
+### Chapter 3
+
+Desmos doesn't yet have vectors built-in, but Geogebra does. The commands in this chapter are for Geogebra. https://www.geogebra.org/graphing
+
+**Vector:** Vector(point as ordered pair). For instance, `Vector((1,2))`. By default, vectors are in standard position (Initial point = (0,0)). Click and drag the arrowhead to change the vector's terminal point.
+
+**Vector:** Vector((ordered pair), (ordered pair)) will draw a vector with the given points as initial and terminal points respectively. For instance, `Vector((1,2),(3,4))`.
+
+**Vector operations:** If Geogebra names the vectors a and b (it doesn't boldface them), enter in the rows things like `a+b`, `a-b`, `2a+3b`, or `a*b`. Drag vectors a and b to see how it affects the other operations.
+
+### Chapter 4
+
+Desmos doesn't yet have complex numbers built-in, but Geogebra does. The commands in this chapter are for Geogebra. https://www.geogebra.org/graphing
+
+**Complex number:** In a new row, enter a number in a+bi form. For instance, `2+3i`. The default label for this number is $z_1$, which you can refer to by typing `z_1`. You can define its label by entering, for instance, `w = 2+3i`. You can click and drag the point in the plane to reposition it.
+
+**Complex color plots:** [By David Bau. Hover in the upper left for instructions.](http://davidbau.com/conformal/#z)
+
+## Calculus (Stewart, Clegg and Watson, 9th edition)
+
+### Chapter 1
+
+**Restricted domain:** Enter a function followed by { condition }. For instance, `y = x^2 {-2 < x < 4}`
+
+**Piecewise functions:** Enter y = {condition1 : definition1, condition2 : definition2, ...} For instance, `y = {x<0: 1-x, x>0: x^2-1}`
+
+**Epsilon-Delta Limits:** https://www.desmos.com/calculator/ccc0m7bgas by me
+
+### Chapter 2
+
+**Derivative:** Define a function like `f(x) = x^2`. Then in another row, type `f'(x)` to see its derivative. Desmos also recognizes `d/dx (f(x))`.
+
+**Derivative intuition:** https://www.desmos.com/calculator/fzjicbxmtr
+
+**Implicit curves:** In any row, enter any equation in x and y and watch the fireworks. Examples to try: 
+`1 = (x^2-1)(y^2-2)(x^2-3)(y^2-4)`
+`sin(x) + sin(y) = sin(xy)`
+
+### Chapter 4
+
+**Riemann Sums:** https://www.desmos.com/calculator/cxsfmpvf69 (Set c = 1/2 for a midpoint estimate)
+
+**Definite Integral:** Define a function like `f(x) = x^2`. Then in another row, type `int` to create the integral symbol. Use the arrow keys to select the lower endpoint. Type a number there. Use the arrow keys to select the upper endpoint. Type a number there. Use the arrow keys to put the cursor just to the right of the integral sign, and type `f(t) dt`. You can replace either endpoint with a variable and make a slider when prompted to see how changing the endpoints affects the value.
+
+**Accumulation Function:** https://www.desmos.com/calculator/jxnpouw8av
+
+### Chapter 5
+
+**Solids of revolution about x-axis:** https://www.desmos.com/3d/p7vx5q81i9 by me
+
+**Solids of revolution about y-axis:** https://www.desmos.com/calculator/wakzxtsxwb
+
+### Chapter 7
+
+**Simpson's Rule:** https://www.desmos.com/calculator/cdgj6pgeni
+
+### Chapter 9
+
+**Slope field generator:** https://www.desmos.com/calculator/tmi3vk4r84
+
+### Chapter 10
+
+**Parametric curves:** Enter x(t) and y(t) as an ordered pair. For instance, to graph $x(t) = sin(4t)$ and $y(t) = cos(5t)$, enter in a row `(sin(4t), cos(5t))`. Choose endpoints for t to see more of the graph.
+
+**Parametric trace:** To see a point trace out the parametric curve mentioned above, enter:
+
+`f(t) = sin(4t)`
+
+`g(t) = cos(5t)`
+
+`(f(t), g(t))` displays the whole curve.
+
+`(f(T), g(T))` plots a point. Create a slider for T when prompted. Drag the slider for T to move the point along the curve.
+
+**Polar point:** Desmos always plots ordered pairs as $(x,y)$ Cartesian. To plot a polar point $(r, \theta)$, first enter `R = 0` and `T = 0` and create sliders when prompted. Then enter `(R cos T, R sin T)` to plot the polar point.
+
+**Polar curves:** Desmos has a built-in ability to plot polar curves of the form $r = f( \theta )$. Just enter something like `r = theta/4`.
+
+**Polar graph trace:** Follow the instructions for polar point and polar curves, except define R in terms of T according to the curve. For instance, instead of R = 0, enter R = T/4. Move the slider for T to trace the point along the polar curve.
+
+### Chapter 11
+
+**Sequences and series:** https://www.desmos.com/calculator/nsuoj2xxed by me
+
+### Chapter 12
+
+In https://www.desmos.com/3d :
+
+**Point:** Enter as an ordered triple. For instance, `(1,2,3)`
+
+**Line:** (Ordered triple) + (Ordered triple) t. For instance, `(1,2,3) + (4,5,6)t`
+
+**Line:** An ordered triple made of functions of t: (f(t), g(t), h(t)). For instance, `(1+t, -2t, 3)`.
+
+**Line:** Symmetric equations in x,y,z. For instance, `(x-1)/5 = (y+2)/4 = z/3`
+
+**Vector:** vector(initial point, terminal point). For instance, `vector((1,2,3),(4,5,0))` .
+
+**Plane:** Linear equation in x,y,z. For instance, `5x-4y+3z=2`
+
+### Chapter 13
+
+In Desmos 3D: https://www.desmos.com/3d
+
+**Vector function:** Desmos interprets `<>` as inequality signs, not angle brackets. Enter as an ordered triple of functions of t surrounded by parentheses. For instance, `(2t+1, e^t, 1/t)`. 
+
+**Vector function trace:** In the above, enter c as the upper bound of t and create a slider for c when prompted. Drag or animate the slider for c to draw the curve.
+
+**Vector function trace point:** Enter in a new row the vector function as above, but with capital T in place of every t. Create a slider for T when prompted. Drag (or animate) the slider for T to move the point along the curve. (Note this will conflict with the unit tangent T(t) if you use this in the same graph.)
+
+**Tangent line, 3D:** https://www.desmos.com/3d/03zquqd09z by me
+
+**TNB/Frenet frame:** https://www.desmos.com/3d/1513142bf3
+
+**Osculating circle, 2D:** https://www.desmos.com/calculator/lpm3igzbhy
+
+**Osculating circle, 3D:** https://www.desmos.com/3d/0b83611338
+
+**Osculating circle + TNB/Frenet frame:** https://www.geogebra.org/m/kaGKS9BB
+
+### Chapter 14
+
+**Contour plot:** https://www.desmos.com/3d/a92807f241
+
+**Partial derivatives, tangent plane, directional derivatives:** https://www.desmos.com/3d/ae3izhvyk6 by me
+
+### Chapter 15
+
+**Double integrals:** https://www.desmos.com/3d/vkhldtondp by me
+
+**Double integrals, general regions:** https://www.desmos.com/3d/wb5ayi7z9p by me
+
+### Chapter 16
+
+**2D Vector fields, line integrals, div/curl:** https://www.desmos.com/calculator/53riovzicf by me
+
+**3D Vector fields:** https://www.geogebra.org/m/u3xregNW
+
+**Parametric surfaces:** https://www.desmos.com/3d/fajt0lvaty

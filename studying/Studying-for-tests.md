@@ -1,0 +1,119 @@
+Even with the leaps in technology, paper-and-pencil tests remain the most reliable and efficient way to evaluate everyone's individual progress in learning the objectives. Time pressure and deadlines are a part of life. Showing what you know can be stressful, but it doesn't have to be -- if you study. Still, test anxiety is a real phenomenon. Time pressure can limit our ability to recall, leading to "blanking". If test anxiety affects you often, accommodations such as extended time and an individual testing environment can be provided by OSAT at no charge, if you qualify.
+
+**"How many questions will be on the test?"**
+
+A reasonable amount. Some questions are quick but others will take more work, which is why number of questions isn't the best measurement. I usually plan for 2 pages (1 front and back) per 25 minutes of class time. Some people will finish quicker than others, but everybody gets the whole period. There's no extra credit for speed. If someone finishes in the first 10 minutes, they might have aced it or they might have given up. Don't compare yourself to others in this regard.
+
+**"What will the test be like?"**
+
+It depends on the course, but most objectives are about doing short answer computation. Suppose we had as an objective "Add fractions (without a calculator)". There would be a problem on the test that looked like:
+
+
+1. Add: 1/4 + 3/5
+
+
+...followed by an inch or two of space. Use the space to do whatever amount of work you are comfortable with. Some problems require work to be shown, others don't. But the more work you show, the greater your chance of partial credit.
+
+
+**"Is there a study guide?"**
+
+I don't give what are commonly called "study guides" in my courses because in my experience, _students actually tend to do worse_ on tests with study guides than without. They become overly reliant on the study guide, memorizing specific problems but not really learning the broader objective. 
+
+Keeping with "Add fractions" objective, let's say the study guide had the problem 1/4 + 3/5. If the test problem were 7/6 + 9/10, would you be able to add the fractions, and not be too concerned about the improper addend or sum, and would you notice that the LCM is 30 and not 60, a technique not used in 1/4 + 3/5? And if I gave 2/7 + 3/7, would you be able to recognize immediately that no adjustment needs to be done to the denominators? "Add fractions", like all objectives, has nuances to it. Learn the objective, not the problem!
+
+I do try to provide a list of review problems from the book before every test. These are aligned with the objectives, and the test is aligned with the objectives. Though the two sets of problems may have little surface overlap, they both require the same concepts. 
+
+**"What is the least amount I need to score on (test) to get (grade)?"**
+
+First, I want to encourage you away from this kind of thinking. Having a minimum in mind encourages the brain to aim for that minimum. Aim high. Do your absolute best. Don't settle!<br>
+But you can figure your grade at any time, and even include some unknowns.<br>
+Suppose the syllabus said the grade breakdown is 10% attendance, 40% homework, 20% tests, and 30% final,<br>
+and your overall scores in these categories were 93%, 81%, 67%, and 50% respectively.<br>
+Express each percent as a decimal, and take the inner/dot product of categories and scores:
+
+.1 * .93 + .4 * .81 + .2 * .67 + .3 * .5 = .701 = 70.1% which, depending on the course or major, _may or may not be considered passing!_ (Some courses require a solid C, not just a C-.)
+
+If we are hoping to achieve at least an 85% in the course, we are looking for a value of x satisfying:
+
+.1 * .93 + .4 * .81 + .2 * .67 + .3 * x = .85
+
+I'll let you figure out what x should be.
+
+**"How should I prepare?"**
+
+* Study the objectives. I write all notes, homework, reviews, and tests based on the objectives list in the syllabus. 
+
+* Do good study habits. Take breaks, eat snacks, get enough sleep. See the links section below for a site on the specifics of math study habits.
+
+* Budget all of your time. As I say at the start of the semester, the credit hour is not just a number. It indicates how much work you can expect to need to do in order to succeed. A fuller explanation of the credit hour is in the syllabus. Before the semester begins, look at your schedule. If you work full time, take a full time course load, and have family obligations, can you handle it all? Or will one or more of those areas start to suffer?
+
+* Don't cram. Cramming does not work, especially not in the math discipline! My math classes are not merely about memorizing facts, they are about learning and practicing processes and sharpening problem-solving skills. The problem for most students is not a lack of time, but a lack of efficiency. Studying for 12 hours solid is an extremely inefficient use of time. You will learn more in less time by studying an hour or two per day each day.
+
+## The cost of cheating
+
+Most of the students in my classes are studying to be engineers. I cannot think of a field where cheating is more dangerous. Bridge collapses, aircraft malfunctions, all are the result of multiple engineers cheating at their jobs (or forcing others to cheat!) The cost is millions of dollars and priceless lives. One of the worst such disasters is the Hyatt Regency walkway collapse in 1981 in Kansas City, Missouri. You can read about it at the following links:
+
+https://www.npr.org/2021/07/17/1016603199/one-of-the-deadliest-u-s-accidental-structural-collapses-happened-40-years-ago-t
+
+https://en.wikipedia.org/wiki/Hyatt_Regency_walkway_collapse
+
+Thankfully the actual stakes are much lower in the classroom. Use this time to practice proving that you, the individual, really know what you're doing. In the future, peoples' lives may depend on it.
+
+
+## Links to some studying resources
+
+[Cornell Textbook-Reading strategies](https://lsc.cornell.edu/how-to-study/reading-strategies/textbook-reading-systems/) and [The Cornell Note-Taking System](https://lsc.cornell.edu/how-to-study/taking-notes/cornell-note-taking-system/) - You should take notes in whatever way works for you, but does it work? Consider this note taking strategy.
+
+[How to study math](http://tutorial.math.lamar.edu/Extras/StudyMath/HowToStudyMath.aspx) - Whether you do well or poor, whether you tend to study for 12 hours a night or 0, everyone can benefit from reading about these.
+
+[Khan Academy](https://www.khanacademy.org/) - Here you can read and watch lessons, and practice many kinds of problems in just about every mathematical area.
+
+[How to figure your grade](https://www.calculator.net/grade-calculator.html) - Use this to calculate your grade. If you get something substantially different from what Blackboard calculates, show me and I'll try to remedy it.
+
+## Spaced Repetition, Anki, and a few decks I made
+
+Bloom's Taxonomy is a way of organizing different levels of thought. Math uses all six levels, including the lowest level: recall. [How to remember anything forever-ish](https://ncase.me/remember/) by Nicky Case is an interactive explanation of a learning method called spaced repetition and the science that proves its effectiveness for recall. I use it all the time to study things I don't know about so that I can dominate at trivia night. Many flash card apps exist, but Anki is a free open source app you can download at https://apps.ankiweb.net/ for Windows, Mac, Linux, and [Android](https://play.google.com/store/apps/details?id=com.ichi2.anki&hl=en_US&pli=1).
+
+The [iPhone](https://apps.apple.com/us/app/ankimobile-flashcards/id373493387) app costs $24.99, which goes to support the web server costs, but you can still use Anki for free on any mobile device with a browser. Once you download Anki and some shared decks to study like the ones below, create an account at Ankiweb, sync it, and open Ankiweb on a mobile browser. Also, you can add your own notes to these packs if there's additional things you want to remember. (See the Anki docs for how to do this.)
+
+[Algebra facts](https://djt-online-ed.github.io/practice/djt-online-ed__Algebra%20facts.apkg)
+
+[Parent functions and transformations](https://djt-online-ed.github.io/practice/djt-online-ed__Transformations.apkg)
+
+[Trig facts](https://djt-online-ed.github.io/practice/djt-online-ed__Trig%20identities.apkg) (Prioritize cards labeled Fundamental)
+
+[Calc I Facts](https://djt-online-ed.github.io/practice/djt-online-ed__Calc%20I%20facts.apkg)
+
+All packs were last updated 2024-08-19. Please let me know if you run into technical issues OR if there is an error in the cards.
+
+How to use:
+1. On a desktop/laptop, download and install Anki from https://apps.ankiweb.net/
+2. Download one or more of the packs linked above
+3. Open Anki, choose "Import Deck", choose a downloaded pack
+4. Study the deck. For each card, say the answer out loud, then choose "Show Answer".
+5. If you missed the answer even slightly, select "Again". (Even if you knew it for a long time!) If you got it right, select "Hard", "Good", or "Easy" depending on how long it took you to remember. The times given under each button are when it will show you that card again. 
+6. Continue until it says done, then do it again tomorrow. Do this throughout the semester.
+
+## Some more automated practice
+
+[Algebra distribution](https://djt-online-ed.github.io/practice/distrib.html)
+
+[Trig facts](https://djt-online-ed.github.io/practice/trig.html)
+
+[Inverse trig facts](https://djt-online-ed.github.io/practice/invtrig.html)
+
+## Free infinite calculus practice!
+
+I am often asked for additional practice with derivatives. Once you have covered the Chain Rule (section 2.5 in Stewart), you have unlocked the ability to practice calculus, forever, for free. No book needed, just internet access. Here is how:
+
+Step 1: Make up a function f(x). Make it as simple or complex as you want. Build it out of the functions you know the derivative rules for. (Let all exponents be real numbers for now, not expressions in x.)
+
+Step 2: Derive it.
+
+Step 3: Check your answer by going to Wolframalpha.com, entering the function, and scrolling down to "Derivative", or enter "Derivative of" your function. Your answer might look different but still be correct. Determine using algebra whether you have an equivalent answer to Wolframalpha's.
+
+Repeat as often as needed. Challenge yourself and get experimental. Build a familiarity with the language.
+
+
+
+

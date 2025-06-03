@@ -1,0 +1,175 @@
+![](https://djt-online-ed.github.io/pitfalls.png)
+
+## When to simplify
+
+When books ask us to "simplify" an expression, they usually mean to get it in as small a form as possible, one that requires little writing but still conveys the same value. For the most part this is correct. However, "simple" can be somewhat relative. Take for instance the following equivalent expressions. Which form is "simpler"? It will depend on the problem or purpose.
+
+
+| $5 \dfrac{1}{3}$ | $= \dfrac{16}{3}$ |
+|:-:|:-:|
+| The mixed form $5 \frac13$ is familiar and has the advantage of easily communicating where this number is compared to other numbers on the number line, and contains all important information about the division that led to it. The problem is that in algebra, adjacency usually implies multiplication, which makes this form ambiguous. Do we mean $5+\frac13$ or $5 \cdot \frac13$?  |  What is often called "improper" form is actually "proper" in that it is preferred for algebra and all math classes afterwards. It avoids the confusion mentioned, and allows us to more easily do certain arithmetic / algebraic operations such as evaluating $\frac{16}{3} \cdot \frac{5}{8}$.   |
+| $\sqrt{2}$ | $\approx 1.414$ |
+| $\sqrt{2}$ saves a lot of writing and is a perfectly exact representation of "the number you square to get 2". The square root of 2 is irrational so it has a decimal expansion that neither terminates nor repeats. No human can write, and no calculator can store, enough decimal places to give us the true value of $\sqrt{2}$.   |  1.414 is an approximation that gives us an idea of where this number is compared to other numbers on the number line, and is needed for practical measurements. But it is deceiving; one might be tempted to continue it 1.4141414... but its true value is closer to 1.4142135. Also, its square is 1.999396, which is very close but not equal to 2. Every approximation introduces roundoff error. |
+| $(x+1)^4$ | $= x^4 + 4x^3 + 6x^2 + 4x + 1$ |
+|$(x+1)^4$ is simpler when considering solving $(x+1)^4=16$, or reducing $\dfrac{(x+3)(x+1)}{(x+1)^4}$. It is also the only acceptable answer if we are given $x^4+4x^3+6x^2+4x+1$ and we are explicitly asked to factor it. | $x^4+4x^3+6x^2+4x+1$ is simpler when investigating polynomial properties, such as end behavior. It is also the only acceptable answer if we are given $(x+1)^4$ and we are explicitly asked to expand it. 
+
+_"So how far should I simplify on a test?"_
+
+Here is what you should be able to do easily without a calculator. I take off point(s) if these are not done, or done incorrectly:
+
+* Do all arithmetic. If your answer consists only of numbers, add/subtract/multiply/divide down to a single number. Evaluate all exponents; $(−4)^3$ should be written as -64.
+* If there is uneven division, always convert fractions to improper form, never mixed form! See above.
+* Decimal form is acceptable if the fraction results in terminating decimals. If the answer was 41/20, I would also accept 2.05. If the answer was 5/3 and you wanted to write it as a decimal, I would only accept $1.\overline{6}$ (with the repeating bar!) This is why 5/3 is preferred; it's short, exact, can be done without a calculator, and usually easier to work with on the way to the answer.
+* I will not ask you to do anything by hand that requires a calculator. For instance, I may ask you to simplify $\sqrt{12}$ to get $2\sqrt{3}$, but you will never need to work out a decimal approximation of either one of these by hand. (There is an algorithm to do square roots by hand, but I don't know it by heart yet.) 
+* In the end, if you're not sure, first read the instructions. If still stuck, ask me. During a test I can answer questions about instructions or answer format.
+
+When doing work with a calculator, only round/approximate the FINAL answer, not any numbers in between. Use exact form as often as practical. If you must approximate in the middle of calculations, use plenty of decimal accuracy (e.g. 6 decimal places) and only round to 2 decimal places in the final answer. If we round off in the middle of calculations, the error introduced is carried forward ("error propagation") and may affect the final answer drastically. For instance, with function $f(x)=x^{10}$, the difference between 1.41 and 1.414 is small, but the difference between the output values is nearly 1: $1.41^{10}=31.059261594$, while $1.414^{10}=31.951709176$
+
+## When to distribute
+
+One of the most common errors I see from algebra up through Calculus II is distributing. Some operations "distribute" over others, but some do not. In the order of operations, **Powers (and roots)** come before **Multiplying (and dividing)** which come before **Adding (and subtracting)**. An operation in this chain distributes over the operation immediately after it, but no further.
+
+|Examples|Rule|
+|:-:|:-:|
+|$(a+b)n = an+bn$ <br><br> $(a-b)n = an-bn$ <br><br> $\dfrac{a+b}{n} = \dfrac{a}{n} + \dfrac{b}{n}$ <br><br> $\dfrac{a-b}{n} = \dfrac{a}{n} - \dfrac{b}{n}$|Here is the original distributive property you learned: Multiplying distributes over addition. It's worth noting here that denominators don't "split" in this way, that is, $\dfrac{a}{b+c} \neq \dfrac{a}{b} + \dfrac{a}{c}$. To see why, remember that division is just a kind of multiplication. $\dfrac{a+b}{n}$ distributes because it is equal to $(a+b)\frac{1}{n}$, while $\dfrac{a}{b+c}$ becomes $a\dfrac{1}{b+c}$ and there is nothing to distribute.|
+|$(a \cdot b)^n = a^n \cdot b^n$ <br><br> $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}$ <br><br> $(\dfrac{a}{b})^n = \dfrac{a^n}{b^n}$ <br><br> $\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$|Powers distribute over multiplication. If something distributes, it also "undistributes". Any of these identities can be reversed, so that for instance, $a^nb^n$ can be replaced with $(ab)^n$.|
+|$\textcolor{red}{(a+b)^n \neq a^n + b^n}$ <br><br> $\textcolor{red}{\sqrt[n]{a+b} \neq \sqrt[n]{a} + \sqrt[n]{b}}$ <br><br> $\textcolor{red}{(a-b)^n \neq a^n - b^n}$ <br><br> $\textcolor{red}{\sqrt[n]{a-b} \neq \sqrt[n]{a} - \sqrt[n]{b}}$|However, powers do NOT distribute over sums! You can prove this to yourself by a counterexample: Is it true that $(3+5)^2=3^2+5^2$ ? Or that $\sqrt{16+9}=\sqrt{16}+\sqrt{9}$? Just one counterexample is enough to prove one of these "theorems" false and unreliable.|
+|$\textcolor{red}{\log(a-b) \neq \log(a) - \log(b)}$ <br><br> $\textcolor{red}{\sin(\dfrac{a}{b}) \neq \dfrac{\sin(a)}{\sin(b)}}$ <br><br> $\textcolor{red}{f(a+b) \neq f(a) + f(b)}$ <br><br> $\textcolor{red}{g(ab) \neq ag(b) \neq g(a)g(b)}$|In general, functions do not distribute over any operation.|
+|$\textcolor{red}{a+(b+c) \neq (a+b) + (a+c)}$ <br><br> $\textcolor{red}{a(bc) \neq (ab)(ac)}$|Operations also do not distribute over themselves.|
+|$(a+b)^2 = a^2 + 2ab + b^2$ <br><br> $(a-b)^2 = a^2 - 2ab + b^2$|Okay, so if squares don't distribute over sums, do they at least do something? Yes. These are worth memorizing because they are two of the most common algebra operations.|
+|$a^2 + b^2$ does not factor :( <br><br> $a^2 - b^2 = (a+b)(a-b)$|Powers do not "undistribute" over sums either, but they can sometimes factor.|
+|$(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$ <br><br> $(a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$|Here are the expansions of cubes of binomials, worth remembering as this is a fairly common operation.|
+| $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$ <br><br> $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$|Cubes don't "undistribute" over sums, but sums and differences of cubes can each be factored.|
+
+
+[Click here for interactive practice recognizing correct and incorrect distribution.](https://djt-online-ed.github.io/practice/distrib.html)
+
+## When to cancel
+
+Another very common error is canceling, specifically, the reducing of a rational expression. The rule of thumb here is: **You can cancel factors, not terms.** Terms are parts of an expression separated by + and -. A rational expression is one giant division. Division does not undo addition or subtraction. Division only undoes multiplication. Therefore we need to write our expressions as products, or factor them, as completely as possible. The components of the product are called factors. This applies to ordinary fractions and algebra.
+
+|Example|Explanation|
+|:-:|:-:|
+|$\dfrac{21}{28}$| Goal: Simplify this fraction to lowest terms. I hope that we wouldn't think of crossing out 2's!|
+|$\dfrac{7 \cdot 3}{7 \cdot 2^2}$|We factor as thoroughly as possible, down to the prime factors.|
+|$\dfrac{3}{4}$|7 is a common factor in the numerator and denominator and therefore can be canceled. We are done.|
+
+|Example|Explanation|
+|:-:|:-:|
+|$\dfrac{x^2 - 6x + 5}{x^2 - 25}$|Goal: Simplify this rational expression to lowest terms. Initially this expression is unfactored, so resist all temptation to start crossing things out! $x^2$ is a term of each of the numerator and denominator, but not a factor.|
+|$\dfrac{(x-5)(x-1)}{(x-5)(x+5)}$|Here is the same expression after the numerator and denominator are each factored, written as products. Since division undoes multiplication, (x-5) can be cancelled from the numerator and denominator.|
+|$\dfrac{x-1}{x+5}$|We are done. Resist once again the temptation to cross out x's! (x-1) and (x+5) are factors of this and the previous expression's numerator and denominator respectively, while x and 1 and 5 are terms and cannot cancel.|
+
+## Is it a polynomial?
+Polynomials are a key object in algebra and calculus and it's important to draw a clear line between polynomials and non-polynomials. There are a few ways to build the idea. We will focus on polynomials of one variable.
+
+A **monomial** is a product of a real constant (the **coefficient**) and the variable to a natural-numbered (integer $\geq 0$) power (the **degree**). There are no exceptions. Every monomial in the table below has a coefficient and a degree.
+| Monomials | Not monomials |
+|:-:|:-:|
+| $2x^5$ <br> $5$ <br> $x$ <br> $-x^2$ <br> $\frac53x^9$ <br> $(\pi + \sqrt{2})x^{100}$ | $5+x$ <br> $x^{5/2}$ <br> $3/x$ <br> $\sqrt{x}$ <br> $5x^{-2}$ <br> $(3i+2)x$|
+
+A **polynomial** is a sum of one or more monomials, called **terms**. If there is even one non-monomial in the sum, the sum is not a polynomial. There are no exceptions. Complicating an expression with additional functions, or operations other than adding, risks its polynomial status.
+
+| Polynomials | Not polynomials |
+|:-:|:-:|
+|$x^5$ <br> $x+5.4$ <br> $5x^2 + 3x - \frac12$ <br> $9x^8 - 7x^6 + 5x^4 - 3x^2 + 2\pi x - 1$  | $x^{5/2} + \sqrt{x}$ <br> $x^3 - x^2 + x^{-1}$ <br> $\dfrac{x^2+1}{x^2-1}$ <br> $(x^3 + 2x + 1)\sin x$ |
+
+Rewriting an expression can clarify or muddy whether it is a polynomial. For instance, is $(x+4)(x+3)$ a polynomial? We can know by expanding it to $x^2 + 7x + 12$ and verifying that yes, all coefficients are real and all degrees are positive integers. This is why there is a standard form to write polynomials, which appears in most textbooks as:
+
+$\LARGE a_n x^n + a_{n-1} x^{n-1} + a_{n-2} x^{n-2} + ... + a_2 x^2 + a_1 x + a_0$
+
+This is an **nth-degree polynomial**. $n$ is an integer and all degrees are integers, and the terms are written in descending order of degree. $a_n, a_{n-1}, a_{n-2} ... a_2, a_1, a_0$ are all just constants (the subscripts are name tags telling which term they belong to.) We require $a_n$ to be nonzero, but any other constants can be zero. For instance, if the polynomial was $x^5 - x^2$, we have $a_5 = 1$, $a_2 = -1$, and $a_4 = a_3 = a_1 = a_0 = 0$. ALL polynomials fit this mold without exception. If something does not, it is not a polynomial.
+
+Polynomials in multiple variables require some tweaks in the definition, but these are consistent with the above rules. A monomial is the product of a real coefficient and one or more variables to natural powers. The degree of a monomial is the sum of the powers of the variables. For instance, $6x^5y^2z$ is a monomial, and its degree is $5+2+1 = 8$. A polynomial is still a sum of monomials and its degree is still the largest degree of any term. The degree of $4xyz + y^2 + w - 7$ is 3. It's trickier to organize these, but in general it's possible to keep it in descending order of degree.
+
+## Zero-Product Property
+If it's known that the product of two numbers is zero, what can be known about the numbers? A bit of thinking should lead us to the answer: at least one of the numbers must be zero. Or: If $ab=0$, then $a=0$ or $b=0$. This is called the zero-product property because zero is the ONLY product for which this property holds.
+
+We could try other numbers to see this. For instance, if two numbers have a product of 15, is it necessarily true that one of the numbers must be 15? Well, $3 \cdot 5$ are two numbers that multiply to 15, but neither one itself is 15. So if all we know is that $ab=15$, we have no useful information about $a$ or $b$.
+
+Suppose we are trying to solve the equation $8x−x^2=15$.
+
+We immediately go astray if we write $\textcolor{red}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{red}{x=15}$ or $\textcolor{red}{8-x=15}$. Neither of these answers check.
+
+Instead, to solve $8x-x^2=15$, we should recognize this as quadratic and put it into standard form:
+
+$-x^2 + 8x - 15 = 0$
+
+$x^2 - 8x + 15 = 0$ which factors into
+
+$(x-5)(x-3) = 0$ which by the zero-product property says one of these two factors must be zero.
+
+$x-5=0$ or $x-3=0$
+
+$x=5$ or $x=3$. Both of these answers check.
+
+## When to cross-multiply (almost never)
+
+There is only one situation which “cross-multiplication” is designed for: Solving equations of the form $\dfrac{A}{B}=\dfrac{C}{D}$.
+This results in $AD=BC$, and from there we can solve as usual. Cross multiplication CANNOT be used to add, subtract, multiply, or divide fractions, or anything else -- it was never designed for those situations.
+In fact, cross-multiplication only saves one step. If you're learning algebra for the first time, it's better to simply multiply both sides by one denominator, followed by the other.
+
+## Trigonometric functions
+
+|Expression|Description|Similar expression|Description|
+|:-:|:-:|:-:|:-:|
+|$\cos(\dfrac{\pi}{4}) = \dfrac{\sqrt{2}}{2}$|A trig fact. Until you are fluent in trigonometry, I recommend that you include parentheses around the argument of the trig function.|$\cos(x) = \dfrac{\sqrt{2}}{2}$|A trig equation to be solved.|
+|$\cos\dfrac{\pi}{4} = \dfrac{\sqrt{2}}{2}$| When the argument of a trig function consists of just one term, it's common to leave the parentheses off. For more terms, we need parentheses to make clear what we mean. For instance, $\cos a+b$ is ambiguous. Do we mean $\cos(a+b)$ or $\cos(a)+b$? By default, the reader will assume the latter. If there are no parentheses, trig is assumed to encompass the first whole term afterward. |$\cos x = \dfrac{\sqrt{2}}{2}$| |
+|$\textcolor{red}{\cos(\dfrac{\sqrt{2}}{2}) \neq \dfrac{\pi}{4}}$| While we _could_ evaluate $\cos(\dfrac{\sqrt{2}}{2})$ (and we would assume $\dfrac{\sqrt{2}}{2}$ to be in radians), such a problem is highly unlikely to arise in practical or even theoretical math, and it certainly doesn't result in $\dfrac{\pi}{4}$.|$\textcolor{red}{\cos \dfrac{\sqrt{2}}{2} \neq x}$| Don't merely "move terms around".|
+|$\textcolor{red}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}/2}{\cos}}$| Cosine of what? Trig functions are functions, not variables. They must always have an input, and cannot be moved around unless their input also travels with them. Always write the input, even if there is only one variable involved (usually $x$, $t$, or $\theta$. |$\textcolor{red}{x \neq \dfrac{\sqrt{2}/2}{\cos}}$| |
+|$\textcolor{red}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}}{2}}$|This is not true in radians, degrees, or any pair of units. One is the result of the other run through a function, but this doesn't make them equal.|$\textcolor{red}{x \neq \dfrac{\sqrt{2}}{2}}$|We cannot arbitrarily drop any piece of an expression.|
+|$\dfrac{\pi}{4} = \arccos \dfrac{\sqrt{2}}{2}$| What these functions are designed to do:<br> cos(angle) = number <br> arccos(number) = angle <br> The same applies to sin and arcsin, and tan and arctan, and so on for the rest of the trig functions. |$x = \arccos \dfrac{\sqrt{2}}{2}$ <br> $=\dfrac{\pi}{4}$|This is the solution to $\cos x = \dfrac{\sqrt{2}}{2}$ if we limit x to be acute, but in general the equation has infinitely many solutions.|
+
+[Click here to practice trig facts](https://djt-online-ed.github.io/practice/trig.html), and [click here to practice inverse trig facts.](https://djt-online-ed.github.io/practice/invtrig.html)
+
+## Calculus: Linear operators
+
+The big three operations in calculus are limits, derivatives, and integrals. The latter two are what are called 'operators' and for our purposes we will consider the first to be of this same kind. Operators are not variables, nor are they functions, but one step above functions.
+
+Operators such as $\lim$, $\dfrac{d}{dx}$, and $\int$, take as input...
+
+functions, such as $f$ and $g$, which take as input...
+
+variables, such as $x$, $t$, and $\theta$.
+
+In calculus we discover that all three of limits, derivatives, and integrals (and a few other operators) are all "Linear". $L$ is a linear operator if, for any constant $c$ and any real numbers $x$ and $y$, we have $L(cx)=cL(x)$ and $L(x+y)=L(x)+L(y)$. In other words, linear operators distribute over or "respect" sums and differences, and constant multiples can float in and out of L. Any other properties of L are possible but not guaranteed. We cannot say in general that $L(xy)=L(x)L(y)$, for instance. This is true of limits, but not derivatives or integrals.
+
+## Logarithms
+
+Logarithms lurk at the end of every algebra course, swamped in a new notation, usually skipped by the teacher and ignored/feared by the students. But these creatures are quite tame. I highly recommend this video by Vihart called [How I feel about logarithms](https://www.youtube.com/watch?v=N-7tcTIrers), a 10-minute and artful explanation of the topic. Like anything in math, it's invented to solve a certain problem, in this case, one that arises when trying to undo powers.
+
+Addition is commutative. In other words, the solution to $x+2=9$ is the same as the solution to $2+x=9$.
+In both cases, the key is to subtract an appropriate number from both sides. Subtraction is the inverse of addition.
+
+Multiplication is also commutative. The solution to $2x=9$ is the same as the solution to $x2=9$, although it is not standard to write it as such. In both cases, the key is to divide the appropriate number on both sides. Division is the inverse of multiplication.
+
+However, exponentiation is NOT commutative. That is, the solution to $x^2=9$ is NOT the same as the solution to $2^x=9$. In the first case, we must take a square root. In the second case, we should take... an xth root? But it's not helpful in figuring out what $x$ is. This is what logarithms are designed to do. We take a "log base 2" of both sides to get $\log_2(2^x)=\log_2(9)$ and therefore $x=\log_2 9$. 
+
+But even though exponentiation is not commutative, there is still a beautiful symmetry between roots, powers, and logarithms. I learned of this structure, called the Triangle of Power, [from this video.](https://www.youtube.com/watch?v=sULa9Lc4pck) In the picture below, the spatial relationship between these three numbers closely matches the three notations used to express the relationship.
+
+| |$3$ <br> $2 \Delta 8$| |
+|:-:|:-:|:-:|
+|Power|Log|Root|
+|$2^3=8$|$3=$ <br> $\log_2 8$|$2 = \sqrt[3]{8}$|
+
+So if we're stuck with evaluating a logarithm and would rather turn it into a question in the form of a power or root, simply build a triangle and fill in the known values. Then solve for the missing number any way you like. 
+
+## Patterns versus Proofs
+
+Seeing the above errors causes me to say often in class "Don't make up rules!" But if we never made up rules, we would never make new discoveries. We are trained to look for patterns and make predictions, and this is a good thing! But we must be careful not to mistake our predictions for proofs. **If we make a prediction, we must prove it works before we can use it as a rule.**
+
+Some proofs can even be modified to speak the universal language of pictures, forming "Proofs without words". [A few examples can be found here](https://artofproblemsolving.com/wiki/index.php/Proofs_without_words).
+
+Suppose we choose n points on a circle and draw all chords joining those points (choosing the points such that no three chords meet at the same point.) How many regions does this divide the circle into?
+
+![](https://djt-online-ed.github.io/pitfalls/pvp1.png)
+
+Based on the first few trials, we might reasonably guess that the number of regions doubles with each new point. Or, $n$ points divides the circle into $2^{n−1}$ regions. This is a conjecture, a use of inductive reasoning. It can be tested.
+
+|Even $n=5$ satisfies the pattern.|But when $n=6$...|
+|---|---|
+|![](https://djt-online-ed.github.io/pitfalls/pvp2.png)|![](https://djt-online-ed.github.io/pitfalls/pvp3.png)|
+
+...The pattern is broken and our conjecture is proven false. If we had stopped at n=5, we would have come up with a faulty formula for the number of regions! This is why we must always seek to prove our assumptions before we rely on them. A formula does exist for this problem, [and can be found here.](http://mathworld.wolfram.com/CircleDivisionbyChords.html)
+
+[There is also a great song about this and other patterns.](https://www.youtube.com/watch?v=NOCsdhzo6Jg)

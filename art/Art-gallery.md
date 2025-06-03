@@ -1,0 +1,81 @@
+All work on this page is my own, created with the mentioned software. Full resolution versions are available at the image source links.
+
+|![](https://djt-online-ed.github.io/art/univcarpet.png)|
+|:-:|
+|_Universal Decimal Carpet_, Excel <br> You may download and modify the [Excel spreadsheet](https://djt-online-ed.github.io/art/carpetgen.xlsx) used to make this|
+
+|![](https://djt-online-ed.github.io/art/ballroom.png)|
+|:-:|
+|_Ballroom_, Apophysis|
+
+|![](https://djt-online-ed.github.io/art/10121.png)|
+|:-:|
+|_10121_, Mspaint|
+
+|![](https://djt-online-ed.github.io/art/12101.png)|
+|:-:|
+|_12101_, Mspaint |
+
+|![](https://djt-online-ed.github.io/art/dna.png)|
+|:-:|
+|_DNA_, Desmos <br> $f(x)= \sin x(\sin^2 x−1)(4 \sin^2 x−1)(4 \sin^2 x−3)$ <br> $g(x)=−f(x)$ <br> $h(x)=0.5 \cos x$ <br> $j(x)=−0.5 \cos x$ |
+
+|![](https://djt-online-ed.github.io/art/wavelattice.png)|
+|:-:|
+|_Wave against lattice_, Desmos <br> $x \sin y=y \sin x$ <br> $\sin y=\sin x$|
+
+|![](https://djt-online-ed.github.io/art/violins.jpg)|
+|:-:|
+|_Violins_, Apophysis|
+
+|![](https://djt-online-ed.github.io/art/rosecube.png)|
+|:-:|
+|_Rosecube_, Matlab <br> Complex color plot of a few iterations of w=log(z^3)|
+
+|![](https://djt-online-ed.github.io/art/loomall.png)|
+|:-:|
+|_Loom #1 - #14_, Geogebra <br> Traces of segment AB, as points A and B each follow a periodic parametric path <br> Download Geogebra file: [here](https://djt-online-ed.github.io/art/loom.ggb)|
+
+|![](https://djt-online-ed.github.io/art/pokerchip.png)|
+|:-:|
+|_Poker chip_, Matlab <br> Complex color plot of a few iterations of $w=\dfrac{z^3+1}{z^3−1}$|
+
+|![](https://djt-online-ed.github.io/art/ice.jpg)|
+|:-:|
+|_Ice_, Apophysis|
+
+|![](https://djt-online-ed.github.io/art/castle.png)|
+|:-:|
+|_Castle_, Turtle|
+
+|![](https://djt-online-ed.github.io/art/castlemoat.png)|
+|:-:|
+|_Castle and Moat_, Turtle|
+
+|![](https://djt-online-ed.github.io/art/ternarypolar.png)|
+|:-:|
+|_Ternary Tree_, Gimp |
+
+|![](https://djt-online-ed.github.io/art/flux.jpg)|
+|:-:|
+|_Flux_, Apophysis|
+
+|![](https://djt-online-ed.github.io/art/rhapsody.jpg)|
+|:-:|
+|_Rhapsody_, Apophysis|
+
+|![](https://djt-online-ed.github.io/art/checkers.png)|
+|:-:|
+|_Checkers I and II_, Matlab <br> Black and white plots of $w = \dfrac{z-1}{z+1}$ and $w = z^i$ respectively|
+
+|![](https://djt-online-ed.github.io/art/caution.png)|
+|:-:|
+|_Caution_, Matlab|
+
+|![](https://djt-online-ed.github.io/art/mouse.png)|
+|:-:|
+|_Mouse_, Matlab <br> A few iterations of $w = z^{w^z}$|
+
+|![](https://djt-online-ed.github.io/art/taillight.png)|
+|:-:|
+|_Arrangement in a truck tail light_, Geogebra <br> Circles of radius 1/2 surrounding the origin and the fifth roots of $1+i$|
