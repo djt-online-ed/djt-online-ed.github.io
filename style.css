@@ -3,7 +3,7 @@
 		width: auto;
 		max-width: 1080px;
 		border-collapse: collapse;
-		background-color: white;
+		background-color: #234567;
 	}
 	th, td {
 		border: 1px solid black;
@@ -22,7 +22,8 @@
 		text-align: left;
 		max-width: 1080px;
 		margin: auto;
-		background-color: #abcdef;
+		color: #abcdef;
+		background-color: #012345;
 	} 
 	ul{
 		text-align: left;
@@ -33,14 +34,14 @@
 		text-align: center;
 		margin: auto;
 		max-width: 600px;
-		background-color: white;
+		background-color: #abcdef;
 	}
 	h1{
 		text-align: center;
 	}
 	a{ 
-    	color: black;
-    	text-decoration: underline;
+    		color: white;
+    		text-decoration: underline;
 	}
 	button {
 		width: 9%;
@@ -48,6 +49,6 @@
 		margin: 2px;
 	}
 	input[type=checkbox] {
-	    transform: scale(1.5);
-	    margin: 10px;
+		transform: scale(1.5);
+		margin: 10px;
 	}

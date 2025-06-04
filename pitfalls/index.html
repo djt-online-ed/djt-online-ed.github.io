@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Faculty website</title>
+<script>window.texme = { style: 'none' }</script>
 <script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<body>
 <textarea>
 
 ![](https://djt-online-ed.github.io/pitfalls.png)
@@ -39,16 +42,16 @@ One of the most common errors I see from algebra up through Calculus II is distr
 |:-:|:-:|
 |\((a+b)n = an+bn\) <br><br> \((a-b)n = an-bn\) <br><br> \(\dfrac{a+b}{n} = \dfrac{a}{n} + \dfrac{b}{n}\) <br><br> $\dfrac{a-b}{n} = \dfrac{a}{n} - \dfrac{b}{n}$|Here is the original distributive property you learned: Multiplying distributes over addition. It's worth noting here that denominators don't "split" in this way, that is, $\dfrac{a}{b+c} \neq \dfrac{a}{b} + \dfrac{a}{c}$. To see why, remember that division is just a kind of multiplication. $\dfrac{a+b}{n}$ distributes because it is equal to $(a+b)\frac{1}{n}$, while $\dfrac{a}{b+c}$ becomes $a\dfrac{1}{b+c}$ and there is nothing to distribute.|
 |$(a \cdot b)^n = a^n \cdot b^n$ <br><br> $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}$ <br><br> $(\dfrac{a}{b})^n = \dfrac{a^n}{b^n}$ <br><br> $\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$|Powers distribute over multiplication. If something distributes, it also "undistributes". Any of these identities can be reversed, so that for instance, $a^nb^n$ can be replaced with $(ab)^n$.|
-|$\textcolor{red}{(a+b)^n \neq a^n + b^n}$ <br><br> $\textcolor{red}{\sqrt[n]{a+b} \neq \sqrt[n]{a} + \sqrt[n]{b}}$ <br><br> $\textcolor{red}{(a-b)^n \neq a^n - b^n}$ <br><br> $\textcolor{red}{\sqrt[n]{a-b} \neq \sqrt[n]{a} - \sqrt[n]{b}}$|However, powers do NOT distribute over sums! You can prove this to yourself by a counterexample: Is it true that $(3+5)^2=3^2+5^2$ ? Or that $\sqrt{16+9}=\sqrt{16}+\sqrt{9}$? Just one counterexample is enough to prove one of these "theorems" false and unreliable.|
-|$\textcolor{red}{\log(a-b) \neq \log(a) - \log(b)}$ <br><br> $\textcolor{red}{\sin(\dfrac{a}{b}) \neq \dfrac{\sin(a)}{\sin(b)}}$ <br><br> $\textcolor{red}{f(a+b) \neq f(a) + f(b)}$ <br><br> $\textcolor{red}{g(ab) \neq ag(b) \neq g(a)g(b)}$|In general, functions do not distribute over any operation.|
-|$\textcolor{red}{a+(b+c) \neq (a+b) + (a+c)}$ <br><br> $\textcolor{red}{a(bc) \neq (ab)(ac)}$|Operations also do not distribute over themselves.|
+|$\textcolor{orange}{(a+b)^n \neq a^n + b^n}$ <br><br> $\textcolor{orange}{\sqrt[n]{a+b} \neq \sqrt[n]{a} + \sqrt[n]{b}}$ <br><br> $\textcolor{orange}{(a-b)^n \neq a^n - b^n}$ <br><br> $\textcolor{orange}{\sqrt[n]{a-b} \neq \sqrt[n]{a} - \sqrt[n]{b}}$|However, powers do NOT distribute over sums! You can prove this to yourself by a counterexample: Is it true that $(3+5)^2=3^2+5^2$ ? Or that $\sqrt{16+9}=\sqrt{16}+\sqrt{9}$? Just one counterexample is enough to prove one of these "theorems" false and unreliable.|
+|$\textcolor{orange}{\log(a-b) \neq \log(a) - \log(b)}$ <br><br> $\textcolor{orange}{\sin(\dfrac{a}{b}) \neq \dfrac{\sin(a)}{\sin(b)}}$ <br><br> $\textcolor{orange}{f(a+b) \neq f(a) + f(b)}$ <br><br> $\textcolor{orange}{g(ab) \neq ag(b) \neq g(a)g(b)}$|In general, functions do not distribute over any operation.|
+|$\textcolor{orange}{a+(b+c) \neq (a+b) + (a+c)}$ <br><br> $\textcolor{orange}{a(bc) \neq (ab)(ac)}$|Operations also do not distribute over themselves.|
 |$(a+b)^2 = a^2 + 2ab + b^2$ <br><br> $(a-b)^2 = a^2 - 2ab + b^2$|Okay, so if squares don't distribute over sums, do they at least do something? Yes. These are worth memorizing because they are two of the most common algebra operations.|
 |$a^2 + b^2$ does not factor :( <br><br> $a^2 - b^2 = (a+b)(a-b)$|Powers do not "undistribute" over sums either, but they can sometimes factor.|
 |$(a+b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$ <br><br> $(a-b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$|Here are the expansions of cubes of binomials, worth remembering as this is a fairly common operation.|
 | $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$ <br><br> $a^3 - b^3 = (a-b)(a^2 + ab + b^2)$|Cubes don't "undistribute" over sums, but sums and differences of cubes can each be factored.|
 
 
-[Click here for interactive practice recognizing correct and incorrect distribution.](https://djt-online-ed.github.io/practice/distrib.html)
+[Click here for interactive practice recognizing correct and incorrect distribution.](../studying/practice/distrib.html)
 
 ## When to cancel
 
@@ -72,13 +75,13 @@ Polynomials are a key object in algebra and calculus and it's important to draw 
 A **monomial** is a product of a real constant (the **coefficient**) and the variable to a natural-numbered (integer $\geq 0$) power (the **degree**). There are no exceptions. Every monomial in the table below has a coefficient and a degree.
 | Monomials | Not monomials |
 |:-:|:-:|
-| $2x^5$ <br> $5$ <br> $x$ <br> $-x^2$ <br> $\frac53x^9$ <br> $(\pi + \sqrt{2})x^{100}$ | $5+x$ <br> $x^{5/2}$ <br> $3/x$ <br> $\sqrt{x}$ <br> $5x^{-2}$ <br> $(3i+2)x$|
+| $2x^5$ <br><br> $5$ <br><br> $x$ <br><br> $-x^2$ <br><br> $\frac53x^9$ <br><br> $(\pi + \sqrt{2})x^{100}$ | $5+x$ <br><br> $x^{5/2}$ <br><br> $3/x$ <br><br> $\sqrt{x}$ <br><br> $5x^{-2}$ <br><br> $(3i+2)x$|
 
 A **polynomial** is a sum of one or more monomials, called **terms**. If there is even one non-monomial in the sum, the sum is not a polynomial. There are no exceptions. Complicating an expression with additional functions, or operations other than adding, risks its polynomial status.
 
 | Polynomials | Not polynomials |
 |:-:|:-:|
-|$x^5$ <br> $x+5.4$ <br> $5x^2 + 3x - \frac12$ <br> $9x^8 - 7x^6 + 5x^4 - 3x^2 + 2\pi x - 1$  | $x^{5/2} + \sqrt{x}$ <br> $x^3 - x^2 + x^{-1}$ <br> $\dfrac{x^2+1}{x^2-1}$ <br> $(x^3 + 2x + 1)\sin x$ |
+|$x^5$ <br><br> $x+5.4$ <br><br> $5x^2 + 3x - \frac12$ <br><br> $9x^8 - 7x^6 + 5x^4 - 3x^2 + 2\pi x - 1$  | $x^{5/2} + \sqrt{x}$ <br><br> $x^3 - x^2 + x^{-1}$ <br><br> $\dfrac{x^2+1}{x^2-1}$ <br><br> $(x^3 + 2x + 1)\sin x$ |
 
 Rewriting an expression can clarify or muddy whether it is a polynomial. For instance, is $(x+4)(x+3)$ a polynomial? We can know by expanding it to $x^2 + 7x + 12$ and verifying that yes, all coefficients are real and all degrees are positive integers. This is why there is a standard form to write polynomials, which appears in most textbooks as:
 
@@ -95,7 +98,7 @@ We could try other numbers to see this. For instance, if two numbers have a prod
 
 Suppose we are trying to solve the equation $8x−x^2=15$.
 
-We immediately go astray if we write $\textcolor{red}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{red}{x=15}$ or $\textcolor{red}{8-x=15}$. Neither of these answers check.
+We immediately go astray if we write $\textcolor{orange}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{orange}{x=15}$ or $\textcolor{orange}{8-x=15}$. Neither of these answers check.
 
 Instead, to solve $8x-x^2=15$, we should recognize this as quadratic and put it into standard form:
 
@@ -121,9 +124,9 @@ In fact, cross-multiplication only saves one step. If you're learning algebra fo
 |:-:|:-:|:-:|:-:|
 |$\cos(\dfrac{\pi}{4}) = \dfrac{\sqrt{2}}{2}$|A trig fact. Until you are fluent in trigonometry, I recommend that you include parentheses around the argument of the trig function.|$\cos(x) = \dfrac{\sqrt{2}}{2}$|A trig equation to be solved.|
 |$\cos\dfrac{\pi}{4} = \dfrac{\sqrt{2}}{2}$| When the argument of a trig function consists of just one term, it's common to leave the parentheses off. For more terms, we need parentheses to make clear what we mean. For instance, $\cos a+b$ is ambiguous. Do we mean $\cos(a+b)$ or $\cos(a)+b$? By default, the reader will assume the latter. If there are no parentheses, trig is assumed to encompass the first whole term afterward. |$\cos x = \dfrac{\sqrt{2}}{2}$| |
-|$\textcolor{red}{\cos(\dfrac{\sqrt{2}}{2}) \neq \dfrac{\pi}{4}}$| While we _could_ evaluate $\cos(\dfrac{\sqrt{2}}{2})$ (and we would assume $\dfrac{\sqrt{2}}{2}$ to be in radians), such a problem is highly unlikely to arise in practical or even theoretical math, and it certainly doesn't result in $\dfrac{\pi}{4}$.|$\textcolor{red}{\cos \dfrac{\sqrt{2}}{2} \neq x}$| Don't merely "move terms around".|
-|$\textcolor{red}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}/2}{\cos}}$| Cosine of what? Trig functions are functions, not variables. They must always have an input, and cannot be moved around unless their input also travels with them. Always write the input, even if there is only one variable involved (usually $x$, $t$, or $\theta$. |$\textcolor{red}{x \neq \dfrac{\sqrt{2}/2}{\cos}}$| |
-|$\textcolor{red}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}}{2}}$|This is not true in radians, degrees, or any pair of units. One is the result of the other run through a function, but this doesn't make them equal.|$\textcolor{red}{x \neq \dfrac{\sqrt{2}}{2}}$|We cannot arbitrarily drop any piece of an expression.|
+|$\textcolor{orange}{\cos(\dfrac{\sqrt{2}}{2}) \neq \dfrac{\pi}{4}}$| While we _could_ evaluate $\cos(\dfrac{\sqrt{2}}{2})$ (and we would assume $\dfrac{\sqrt{2}}{2}$ to be in radians), such a problem is highly unlikely to arise in practical or even theoretical math, and it certainly doesn't result in $\dfrac{\pi}{4}$.|$\textcolor{orange}{\cos \dfrac{\sqrt{2}}{2} \neq x}$| Don't merely "move terms around".|
+|$\textcolor{orange}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}/2}{\cos}}$| Cosine of what? Trig functions are functions, not variables. They must always have an input, and cannot be moved around unless their input also travels with them. Always write the input, even if there is only one variable involved (usually $x$, $t$, or $\theta$. |$\textcolor{orange}{x \neq \dfrac{\sqrt{2}/2}{\cos}}$| |
+|$\textcolor{orange}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}}{2}}$|This is not true in radians, degrees, or any pair of units. One is the result of the other run through a function, but this doesn't make them equal.|$\textcolor{orange}{x \neq \dfrac{\sqrt{2}}{2}}$|We cannot arbitrarily drop any piece of an expression.|
 |$\dfrac{\pi}{4} = \arccos \dfrac{\sqrt{2}}{2}$| What these functions are designed to do:<br> cos(angle) = number <br> arccos(number) = angle <br> The same applies to sin and arcsin, and tan and arctan, and so on for the rest of the trig functions. |$x = \arccos \dfrac{\sqrt{2}}{2}$ <br> $=\dfrac{\pi}{4}$|This is the solution to $\cos x = \dfrac{\sqrt{2}}{2}$ if we limit x to be acute, but in general the equation has infinitely many solutions.|
 
 [Click here to practice trig facts](https://djt-online-ed.github.io/practice/trig.html), and [click here to practice inverse trig facts.](https://djt-online-ed.github.io/practice/invtrig.html)
@@ -142,7 +145,7 @@ In calculus we discover that all three of limits, derivatives, and integrals (an
 
 ## Logarithms
 
-Logarithms lurk at the end of every algebra course, swamped in a new notation, usually skipped by the teacher and ignored/feared by the students. But these creatures are quite tame. I highly recommend this video by Vihart called [How I feel about logarithms](https://www.youtube.com/watch?v=N-7tcTIrers), a 10-minute and artful explanation of the topic. Like anything in math, it's invented to solve a certain problem, in this case, one that arises when trying to undo powers.
+Logarithms lurk at the end of every algebra course, swamped in a new notation, usually skipped by the teacher and ignored/feared by the students. But these creatures are quite tame. Like anything in math, it's invented to solve a certain problem, in this case, one that arises when trying to undo powers. 
 
 Addition is commutative. In other words, the solution to $x+2=9$ is the same as the solution to $2+x=9$.
 In both cases, the key is to subtract an appropriate number from both sides. Subtraction is the inverse of addition.
@@ -153,32 +156,26 @@ However, exponentiation is NOT commutative. That is, the solution to $x^2=9$ is 
 
 But even though exponentiation is not commutative, there is still a beautiful symmetry between roots, powers, and logarithms. I learned of this structure, called the Triangle of Power, [from this video.](https://www.youtube.com/watch?v=sULa9Lc4pck) In the picture below, the spatial relationship between these three numbers closely matches the three notations used to express the relationship.
 
-| |$3$ <br> $2 \Delta 8$| |
+| |$3$ <br> $2 \LARGE \Delta \normalsize 8$| |
 |:-:|:-:|:-:|
 |Power|Log|Root|
-|$2^3=8$|$3=$ <br> $\log_2 8$|$2 = \sqrt[3]{8}$|
+|$2^3=8$|$3$ <br> $=$ <br> $\log_2 8$|$2 = \sqrt[3]{8}$|
 
 So if we're stuck with evaluating a logarithm and would rather turn it into a question in the form of a power or root, simply build a triangle and fill in the known values. Then solve for the missing number any way you like. 
+
+If it still doesn't make sense, I recommend a video by Vihart called [How I feel about logarithms](./HowIFeelAboutLogarithms_Vihart.mp4) is a 10-minute and artful explanation of the topic.
 
 ## Patterns versus Proofs
 
 Seeing the above errors causes me to say often in class "Don't make up rules!" But if we never made up rules, we would never make new discoveries. We are trained to look for patterns and make predictions, and this is a good thing! But we must be careful not to mistake our predictions for proofs. **If we make a prediction, we must prove it works before we can use it as a rule.**
 
-Some proofs can even be modified to speak the universal language of pictures, forming "Proofs without words". [A few examples can be found here](https://artofproblemsolving.com/wiki/index.php/Proofs_without_words).
+Here is an exercise: Draw a large circle. Then repeatedly, draw a point on the edge of the circle, and use a straightedge to draw lines connecting this point to every other point (if any.) We want to maximize the number of regions, so choose points so that no three chords meet at the same intersection. At each step, count the number of points n and the number of regions r(n). After drawing lines from the fifth point, predict a function that gives r(n) for all n. Then draw lines from a sixth point. What happens?
 
-Suppose we choose n points on a circle and draw all chords joining those points (choosing the points such that no three chords meet at the same point.) How many regions does this divide the circle into?
+A working formula exists, and you may want to spend more time to try and develop it (though it does require combinatorics.) 
 
-![](https://djt-online-ed.github.io/pitfalls/pvp1.png)
+(Spoilers!) The solution can be found [here](https://mathworld.wolfram.com/CircleDivisionbyChords.html) , and there is also [a great song](https://www.youtube.com/watch?v=NOCsdhzo6Jg) about this and other patterns.
 
-Based on the first few trials, we might reasonably guess that the number of regions doubles with each new point. Or, $n$ points divides the circle into $2^{n−1}$ regions. This is a conjecture, a use of inductive reasoning. It can be tested.
-
-|Even $n=5$ satisfies the pattern.|But when $n=6$...|
-|---|---|
-|![](https://djt-online-ed.github.io/pitfalls/pvp2.png)|![](https://djt-online-ed.github.io/pitfalls/pvp3.png)|
-
-...The pattern is broken and our conjecture is proven false. If we had stopped at n=5, we would have come up with a faulty formula for the number of regions! This is why we must always seek to prove our assumptions before we rely on them. A formula does exist for this problem, [and can be found here.](http://mathworld.wolfram.com/CircleDivisionbyChords.html)
-
-[There is also a great song about this and other patterns.](https://www.youtube.com/watch?v=NOCsdhzo6Jg)
 
 </textarea>
+</body>
 </html>
