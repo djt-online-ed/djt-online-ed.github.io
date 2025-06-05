@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Faculty website</title>
+<title>Common pitfalls</title>
 <script>window.texme = { style: 'none' }</script>
 <script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script>
 <link rel="stylesheet" type="text/css" href="../style.css">
@@ -92,6 +92,7 @@ In fact, cross-multiplication only saves one step. If you're learning algebra fo
 
 
 ## Zero-Product Property
+
 If it's known that the product of two numbers is zero, what can be known about the numbers? A bit of thinking should lead us to the answer: at least one of the numbers must be zero. Or: If $ab=0$, then $a=0$ or $b=0$. This is called the zero-product property because zero is the ONLY product for which this property holds.
 
 We could try other numbers to see this. For instance, if two numbers have a product of 15, is it necessarily true that one of the numbers must be 15? Well, $3 \cdot 5$ are two numbers that multiply to 15, but neither one itself is 15. So if all we know is that $ab=15$, we have no useful information about $a$ or $b$.
@@ -115,6 +116,7 @@ $x=5$ or $x=3$. Both of these answers check.
 
 
 ## Is it a polynomial?
+
 Polynomials are a key object in algebra and calculus and it's important to draw a clear line between polynomials and non-polynomials. There are a few ways to build the idea. We will focus on polynomials of one variable.
 
 A **monomial** is a product of a real constant (the **coefficient**) and the variable to a natural-numbered (integer $\geq 0$) power (the **degree**). There are no exceptions. Every monomial in the table below has a coefficient and a degree.
@@ -138,11 +140,11 @@ Polynomials in multiple variables require some tweaks in the definition, but the
 
 
 
-## Notation is the worst
+## Notation is the worst!!!
 
 Notation, the way we write math, is the hardest part of math.
 
-The goal of math is clear communication. It's systematic for the most part, but it suffers from the same problems that language (at least english!) does: Some notation feels arbitrary to learners and there's not much of an explanation as to why a certain convention became standard. (That I know of. It's worth looking into when the expression was first used.)
+The goal of math is clear communication. It's systematic for the most part, but it suffers from the same problems that language (at least english!) does: Some notation feels arbitrary to learners and there's not much of an explanation as to why a certain convention became standard. (That I know of. It's worth looking into the archives to see when an expression was first used.)
 
 It seems mathematicians are allergic to parentheses and use them as little as possible. As a student, do not be afraid to make your point perfectly clear with as many parentheses as it takes, but do be aware of when they can be dropped.
 Suppose we see this expression:
@@ -156,7 +158,7 @@ If the writer intends to communicate $ \sin(x^2+3) $, that is how it should be w
 
 The following expression appears everywhere: $ \sin^2 x $. What is meant here? Are we squaring the function? The short answer is, $ \sin^2 x $ **is our notation for** $ (\sin x)^2. $ Again, the mathematician wants to drop the parentheses because _who has time to write those extra two strokes_? But without them, we get $ \sin x^2 $, which according to the above rule of thumb would equal $ \sin(x^2) $, which is not equal to $ (\sin x)^2 $, the expression we meant to communicate. So to avoid that, the mathematician, against all common sense, scoots the 2 on top of the sin function, and then so did everyone else, probably.
 
-In general, when you see a trig function raised to a positive integer and then the argument, it is shorthand for: $ \mathrm{trig}^n (x) = (\mathrm{trig(x)})^n $ So for instance, $ \tan^4(x) = (\tan(x))^4 $.
+In general, when you see a trig function raised to a positive integer and then the argument, like $ \mathrm{trig}^n (x)$ , this is shorthand for $(\mathrm{trig}(x))^n $. So for instance, $ \tan^4(x) = (\tan(x))^4 $.
 
 Okay! So if we see $ \sin^{-1}(x)$, that should equal $ (\sin(x))^{-1} = 1 / \sin(x) $... right? 
 
@@ -184,11 +186,11 @@ therefore $x$ is $ \pm 3 $
 
 **Don't use "=" to say "so", "therefore", or "the next step is".** Just start a new line. If we really want to make a mark here, it would be either $ \Rightarrow $ or $ \Leftrightarrow $. A full discussion of these symbols is reserved for a course on logic, but here are their rough meanings:
 
-$=$These two expressions are equal
+$=$ These two _expressions_ are equal
 
-$ \Leftrightarrow $ These two statements are equivalent
+$ \Leftrightarrow $ These two _statements_ are equivalent
 
-$ \Rightarrow $ The first statement leads to the second, but not necessarily vice versa.
+$ \Rightarrow $ The first _statement_ leads to the second, but not necessarily vice versa.
 
 We can write the above work as 
 
@@ -243,6 +245,9 @@ But even though exponentiation is not commutative, there is still a beautiful sy
 |$2^3=8$|$3$ <br> $=$ <br> $\log_2 8$|$2 = \sqrt[3]{8}$|
 
 So if we're stuck with evaluating a logarithm and would rather turn it into a question in the form of a power or root, simply build a triangle and fill in the known values. Then solve for the missing number any way you like. 
+
+If you're still stuck, I recommend a 9-minute video by ViHart called [How I feel about logarithms](https://vimeo.com/147902562), an artful exploration of the topic.
+
 
 ## Patterns versus Proofs
 

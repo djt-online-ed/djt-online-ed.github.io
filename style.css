@@ -1,6 +1,7 @@
 	table {
-		margin: auto;
+		margin: 10px auto auto auto;
 		width: auto;
+		padding: 10px;
 		max-width: 1080px;
 		border-collapse: collapse;
 		background-color: #234567;
@@ -21,6 +22,7 @@
 	body{
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: left;
+		line-height: 1.5;
 		max-width: 1080px;
 		margin: auto;
 		color: #abcdef;
@@ -37,7 +39,7 @@
 		max-width: 600px;
 		background-color: #abcdef;
 	}
-	h1{
+	h1, h4{
 		text-align: center;
 	}
 	a{ 
@@ -52,4 +54,9 @@
 	input[type=checkbox] {
 		transform: scale(1.5);
 		margin: 10px;
+	}
+	code {
+		border-radius: 5px;
+		background-color: #123456;
+		color: orange;
 	}
