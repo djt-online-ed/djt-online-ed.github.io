@@ -12,6 +12,7 @@
 		border-collapse: collapse;
 	}
 	img {
+		display: block;
 		width: auto;
 		height: auto;
 		max-width: 600px;
