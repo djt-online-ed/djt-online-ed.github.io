@@ -9,6 +9,8 @@
 
 ![](https://djt-online-ed.github.io/pitfalls.png)
 
+# Common Pitfalls
+
 ## When to simplify
 
 When books ask us to "simplify" an expression, they usually mean to get it in as small a form as possible, one that requires little writing but still conveys the same value. For the most part this is correct. However, "simple" can be somewhat relative. Take for instance the following equivalent expressions. Which form is "simpler"? It will depend on the problem or purpose.
@@ -34,6 +36,9 @@ Here is what you should be able to do easily without a calculator. I take off po
 
 When doing work with a calculator, only round/approximate the FINAL answer, not any numbers in between. Use exact form as often as practical. If you must approximate in the middle of calculations, use plenty of decimal accuracy (e.g. 6 decimal places) and only round to 2 decimal places in the final answer. If we round off in the middle of calculations, the error introduced is carried forward ("error propagation") and may affect the final answer drastically. For instance, with function \(f(x)=x^{10}\), the difference between 1.41 and 1.414 is small, but the difference between the output values is nearly 1: \(1.41^{10}=31.059261594\), while \(1.414^{10}=31.951709176\)
 
+
+
+
 ## When to distribute
 
 One of the most common errors I see from algebra up through Calculus II is distributing. Some operations "distribute" over others, but some do not. In the order of operations, **Powers (and roots)** come before **Multiplying (and dividing)** which come before **Adding (and subtracting)**. An operation in this chain distributes over the operation immediately after it, but no further.
@@ -53,6 +58,9 @@ One of the most common errors I see from algebra up through Calculus II is distr
 
 [Click here for interactive practice recognizing correct and incorrect distribution.](../studying/practice/distrib.html)
 
+
+
+
 ## When to cancel
 
 Another very common error is canceling, specifically, the reducing of a rational expression. The rule of thumb here is: **You can cancel factors, not terms.** Terms are parts of an expression separated by + and -. A rational expression is one giant division. Division does not undo addition or subtraction. Division only undoes multiplication. Therefore we need to write our expressions as products, or factor them, as completely as possible. The components of the product are called factors. This applies to ordinary fractions and algebra.
@@ -68,6 +76,43 @@ Another very common error is canceling, specifically, the reducing of a rational
 |$\dfrac{x^2 - 6x + 5}{x^2 - 25}$|Goal: Simplify this rational expression to lowest terms. Initially this expression is unfactored, so resist all temptation to start crossing things out! $x^2$ is a term of each of the numerator and denominator, but not a factor.|
 |$\dfrac{(x-5)(x-1)}{(x-5)(x+5)}$|Here is the same expression after the numerator and denominator are each factored, written as products. Since division undoes multiplication, (x-5) can be cancelled from the numerator and denominator.|
 |$\dfrac{x-1}{x+5}$|We are done. Resist once again the temptation to cross out x's! (x-1) and (x+5) are factors of this and the previous expression's numerator and denominator respectively, while x and 1 and 5 are terms and cannot cancel.|
+
+
+
+
+
+## When to cross-multiply (almost never)
+
+There is only one situation which “cross-multiplication” is designed for: Solving equations of the form $\dfrac{A}{B}=\dfrac{C}{D}$.
+This results in $AD=BC$, and from there we can solve as usual. Cross multiplication CANNOT be used to add, subtract, multiply, or divide fractions, or anything else -- it was never designed for those situations.
+In fact, cross-multiplication only saves one step. If you're learning algebra for the first time, it's better to simply multiply both sides by one denominator, followed by the other.
+
+
+
+
+
+## Zero-Product Property
+If it's known that the product of two numbers is zero, what can be known about the numbers? A bit of thinking should lead us to the answer: at least one of the numbers must be zero. Or: If $ab=0$, then $a=0$ or $b=0$. This is called the zero-product property because zero is the ONLY product for which this property holds.
+
+We could try other numbers to see this. For instance, if two numbers have a product of 15, is it necessarily true that one of the numbers must be 15? Well, $3 \cdot 5$ are two numbers that multiply to 15, but neither one itself is 15. So if all we know is that $ab=15$, we have no useful information about $a$ or $b$.
+
+Suppose we are trying to solve the equation $8x−x^2=15$.
+
+We immediately go astray if we write $\textcolor{orange}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{orange}{x=15}$ or $\textcolor{orange}{8-x=15}$. Neither of these answers check.
+
+Instead, to solve $8x-x^2=15$, we should recognize this as quadratic and put it into standard form:
+
+$-x^2 + 8x - 15 = 0$
+
+$x^2 - 8x + 15 = 0$ which factors into
+
+$(x-5)(x-3) = 0$ which by the zero-product property says one of these two factors must be zero.
+
+$x-5=0$ or $x-3=0$
+
+$x=5$ or $x=3$. Both of these answers check.
+
+
 
 ## Is it a polynomial?
 Polynomials are a key object in algebra and calculus and it's important to draw a clear line between polynomials and non-polynomials. There are a few ways to build the idea. We will focus on polynomials of one variable.
@@ -91,45 +136,81 @@ This is an **nth-degree polynomial**. $n$ is an integer and all degrees are inte
 
 Polynomials in multiple variables require some tweaks in the definition, but these are consistent with the above rules. A monomial is the product of a real coefficient and one or more variables to natural powers. The degree of a monomial is the sum of the powers of the variables. For instance, $6x^5y^2z$ is a monomial, and its degree is $5+2+1 = 8$. A polynomial is still a sum of monomials and its degree is still the largest degree of any term. The degree of $4xyz + y^2 + w - 7$ is 3. It's trickier to organize these, but in general it's possible to keep it in descending order of degree.
 
-## Zero-Product Property
-If it's known that the product of two numbers is zero, what can be known about the numbers? A bit of thinking should lead us to the answer: at least one of the numbers must be zero. Or: If $ab=0$, then $a=0$ or $b=0$. This is called the zero-product property because zero is the ONLY product for which this property holds.
 
-We could try other numbers to see this. For instance, if two numbers have a product of 15, is it necessarily true that one of the numbers must be 15? Well, $3 \cdot 5$ are two numbers that multiply to 15, but neither one itself is 15. So if all we know is that $ab=15$, we have no useful information about $a$ or $b$.
 
-Suppose we are trying to solve the equation $8x−x^2=15$.
+## Notation is the worst
 
-We immediately go astray if we write $\textcolor{orange}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{orange}{x=15}$ or $\textcolor{orange}{8-x=15}$. Neither of these answers check.
+Notation, the way we write math, is the hardest part of math.
 
-Instead, to solve $8x-x^2=15$, we should recognize this as quadratic and put it into standard form:
+The goal of math is clear communication. It's systematic for the most part, but it suffers from the same problems that language (at least english!) does: Some notation feels arbitrary to learners and there's not much of an explanation as to why a certain convention became standard. (That I know of. It's worth looking into when the expression was first used.)
 
-$-x^2 + 8x - 15 = 0$
+It seems mathematicians are allergic to parentheses and use them as little as possible. As a student, do not be afraid to make your point perfectly clear with as many parentheses as it takes, but do be aware of when they can be dropped.
+Suppose we see this expression:
 
-$x^2 - 8x + 15 = 0$ which factors into
+$ \sin x^2 + 3 $
 
-$(x-5)(x-3) = 0$ which by the zero-product property says one of these two factors must be zero.
+What is meant here? Is it $ \sin(x^2) + 3 $ or $ \sin(x^2 + 3) $? In other words, what is the argument of the sin function: $ x^2 $ or $ x^2 + 3 $?
 
-$x-5=0$ or $x-3=0$
+The rule of thumb is that, in the absence of parentheses **the argument is the first whole term after the function** (Using "term" in the sense discussed in the Polynomials section). Terms are separated by +-, so the first whole term is $ x^2 $. I have not known this rule to fail.
+If the writer intends to communicate $ \sin(x^2+3) $, that is how it should be written, with parentheses.
 
-$x=5$ or $x=3$. Both of these answers check.
+The following expression appears everywhere: $ \sin^2 x $. What is meant here? Are we squaring the function? The short answer is, $ \sin^2 x $ **is our notation for** $ (\sin x)^2. $ Again, the mathematician wants to drop the parentheses because _who has time to write those extra two strokes_? But without them, we get $ \sin x^2 $, which according to the above rule of thumb would equal $ \sin(x^2) $, which is not equal to $ (\sin x)^2 $, the expression we meant to communicate. So to avoid that, the mathematician, against all common sense, scoots the 2 on top of the sin function, and then so did everyone else, probably.
 
-## When to cross-multiply (almost never)
+In general, when you see a trig function raised to a positive integer and then the argument, it is shorthand for: $ \mathrm{trig}^n (x) = (\mathrm{trig(x)})^n $ So for instance, $ \tan^4(x) = (\tan(x))^4 $.
 
-There is only one situation which “cross-multiplication” is designed for: Solving equations of the form $\dfrac{A}{B}=\dfrac{C}{D}$.
-This results in $AD=BC$, and from there we can solve as usual. Cross multiplication CANNOT be used to add, subtract, multiply, or divide fractions, or anything else -- it was never designed for those situations.
-In fact, cross-multiplication only saves one step. If you're learning algebra for the first time, it's better to simply multiply both sides by one denominator, followed by the other.
+Okay! So if we see $ \sin^{-1}(x)$, that should equal $ (\sin(x))^{-1} = 1 / \sin(x) $... right? 
 
-## Trigonometric functions
+I would absolutely forgive you for thinking so. <!--(Note that we already have a name for $ 1 / \sin(x)$, it's $ \csc(x) $. )--> Unfortunately $f^{-1}(x)$ is a notation reserved for stating the inverse of a given function, something very different from a reciprocal. Argh! Do words and numbers mean anything anymore? Should we throw out using $x^{-1} = 1/x$?
 
-|Expression|Description|Similar expression|Description|
+Fortunately, just as in language, **context can lock an ambiguous expression into a specific meaning.** We don't have to guess at what a superscript of -1 means as long as we know what kind of object it's on top of:
+$ x^{-1} = 1/x $ because $x$ is a variable or number.
+$ f^{-1}(x) \neq 1/f(x) $ because $f$ is a function. Finding an inverse of $f$ is not trivial. You'll get a full discussion of this topic in algebra and/or calculus.
+
+In trigonometry, $ \sin^{-1}(x) $ and $ \arcsin(x) $ mean the same thing, and I much prefer teaching the latter. It retains the "related but different function" meaning. Could we add "arc" to the front of any function to make it into its inverse? It's not standard. But math notation, like all language, evolves over time. What is standard today may become antiquated in favor of a better notation, and you can participate in that process! Just keep in mind the ultimate goal: that the reader knows exactly what you mean by what you write.
+
+What does this symbol mean? $ = $
+
+Many will say "equals". And it's used that way, but it's also stretched outside that purpose. Take for instance the following work:
+
+$ x^2 = 9 $
+
+$ = x = \pm 3 $
+
+Taken literally this seems to be saying that $9=3$. But it's likely the writer probably meant:
+
+$x^2$ is $9$,
+
+therefore $x$ is $ \pm 3 $
+
+**Don't use "=" to say "so", "therefore", or "the next step is".** Just start a new line. If we really want to make a mark here, it would be either $ \Rightarrow $ or $ \Leftrightarrow $. A full discussion of these symbols is reserved for a course on logic, but here are their rough meanings:
+
+$=$These two expressions are equal
+
+$ \Leftrightarrow $ These two statements are equivalent
+
+$ \Rightarrow $ The first statement leads to the second, but not necessarily vice versa.
+
+We can write the above work as 
+
+$  x^2 = 9 $
+
+$ \Leftrightarrow x = \pm 3 $
+
+
+
+
+
+## More about trig
+
+|Equation|Description|Similar equation|Description|
 |:-:|:-:|:-:|:-:|
 |$\cos(\dfrac{\pi}{4}) = \dfrac{\sqrt{2}}{2}$|A trig fact. Until you are fluent in trigonometry, I recommend that you include parentheses around the argument of the trig function.|$\cos(x) = \dfrac{\sqrt{2}}{2}$|A trig equation to be solved.|
-|$\cos\dfrac{\pi}{4} = \dfrac{\sqrt{2}}{2}$| When the argument of a trig function consists of just one term, it's common to leave the parentheses off. For more terms, we need parentheses to make clear what we mean. For instance, $\cos a+b$ is ambiguous. Do we mean $\cos(a+b)$ or $\cos(a)+b$? By default, the reader will assume the latter. If there are no parentheses, trig is assumed to encompass the first whole term afterward. |$\cos x = \dfrac{\sqrt{2}}{2}$| |
-|$\textcolor{orange}{\cos(\dfrac{\sqrt{2}}{2}) \neq \dfrac{\pi}{4}}$| While we _could_ evaluate $\cos(\dfrac{\sqrt{2}}{2})$ (and we would assume $\dfrac{\sqrt{2}}{2}$ to be in radians), such a problem is highly unlikely to arise in practical or even theoretical math, and it certainly doesn't result in $\dfrac{\pi}{4}$.|$\textcolor{orange}{\cos \dfrac{\sqrt{2}}{2} \neq x}$| Don't merely "move terms around".|
+|$\textcolor{orange}{\cos(\dfrac{\sqrt{2}}{2}) \neq \dfrac{\pi}{4}}$| While we _could_ evaluate $\cos(\dfrac{\sqrt{2}}{2})$ (and we would assume $\dfrac{\sqrt{2}}{2}$ to be in radians), it's not the native language of the cos function, and it doesn't result in $\pi / 4$.|$\textcolor{orange}{\cos \dfrac{\sqrt{2}}{2} \neq x}$| Don't merely "move terms around".|
 |$\textcolor{orange}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}/2}{\cos}}$| Cosine of what? Trig functions are functions, not variables. They must always have an input, and cannot be moved around unless their input also travels with them. Always write the input, even if there is only one variable involved (usually $x$, $t$, or $\theta$. |$\textcolor{orange}{x \neq \dfrac{\sqrt{2}/2}{\cos}}$| |
 |$\textcolor{orange}{\dfrac{\pi}{4} \neq \dfrac{\sqrt{2}}{2}}$|This is not true in radians, degrees, or any pair of units. One is the result of the other run through a function, but this doesn't make them equal.|$\textcolor{orange}{x \neq \dfrac{\sqrt{2}}{2}}$|We cannot arbitrarily drop any piece of an expression.|
 |$\dfrac{\pi}{4} = \arccos \dfrac{\sqrt{2}}{2}$| What these functions are designed to do:<br> cos(angle) = number <br> arccos(number) = angle <br> The same applies to sin and arcsin, and tan and arctan, and so on for the rest of the trig functions. |$x = \arccos \dfrac{\sqrt{2}}{2}$ <br> $=\dfrac{\pi}{4}$|This is the solution to $\cos x = \dfrac{\sqrt{2}}{2}$ if we limit x to be acute, but in general the equation has infinitely many solutions.|
 
-[Click here to practice trig facts](https://djt-online-ed.github.io/practice/trig.html), and [click here to practice inverse trig facts.](https://djt-online-ed.github.io/practice/invtrig.html)
+[Click here to practice trig facts](../studying/practice/trig.html), and [click here to practice inverse trig facts.](../studying/practice/invtrig.html)
 
 ## Calculus: Linear operators
 
