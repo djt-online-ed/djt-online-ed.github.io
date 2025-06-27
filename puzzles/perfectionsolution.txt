@@ -7,7 +7,7 @@ Trigonometry:
 Find a perfect triangle with an angle of 60 degrees.
 
 Calculus:
-Find a perfect triangle with minimum area.
+Find the smallest perfect triangle.
 
 
 
@@ -96,11 +96,11 @@ Then (4 + 2sqrt(2) - 4)(b-4) = 8
 
 2sqrt(2)(b-4) = 8
 (b-4) = 2sqrt(2)
-b = 2sqrt(2) - 4
+b = 2sqrt(2) + 4
 
 So our triangle is right isosceles, a 45-45-90 triangle, with area and perimeter (2+sqrt(2))(4+2sqrt(2)) = 12 + 8sqrt(2).
 
-
+(The area and perimeter can be made arbitrarily large by taking a or b close to 4.)
 
 
 
