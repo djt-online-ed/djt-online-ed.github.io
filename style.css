@@ -1,67 +1,66 @@
-	body {
-		color: #abcdef;
-		background-color: #012345;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: left;
-		line-height: 1.5;
-		max-width: 1080px;
-		margin: auto;
-	} 
-	p {
-    margin: 10px;
-	}
-	table {
-		background-color: #234567;
-	  table-layout: fixed;
-		margin: 5px auto auto auto;
-		padding: 5px;
-		border-collapse: collapse;
-		width: auto;
-		max-width: 1080px;
-	}
-	th, td {
-		border: 1px solid black;
-		padding: 5px;
-		max-width: 500px;
-	}
-	img {
-		max-width: 600px;
-		width: 100%;
-		height: auto;
-		margin: auto;
-		padding: auto;
-		display: block;
-	}
-	ul{
-		text-align: left;
-	}
-	h1, h4{
-		text-align: center;
-	}
-	a{ 
+body {
+	color: #abcdef;
+	background-color: #012345;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: left;
+	line-height: 1.5;
+	max-width: 1080px;
+	margin: auto;
+} 
+p {
+	margin: 10px;
+}
+table {
+	background-color: #234567;
+	table-layout: fixed;
+	margin: 5px auto auto auto;
+	padding: 5px;
+	border-collapse: collapse;
+	width: auto;
+	max-width: 1080px;
+}
+th, td {
+	border: 1px solid black;
+	padding: 5px;
+	max-width: 600px;
+}
+img {
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+	margin: auto;
+	padding: auto;
+	display: block;
+}
+ul{
+	text-align: left;
+}
+h1, h4{
+	text-align: center;
+}
+a{ 
     	color: white;
     	text-decoration: underline;
-	}
-	code {
-    color: orange;
-		background-color: #123456;
-		border-radius: 5px;
-	}
-	div{
-		color:black; 
-		border:1px solid;
-		text-align: center;
-		margin: auto;
-		max-width: 600px;
-		background-color: #abcdef;
-	}	
-	button {
-		width: 9%;
-		height: 60px;
-		margin: 2px;
-	}
-	input[type=checkbox] {
-		transform: scale(1.5);
-		margin: 10px;
-	}
-
+}
+code {
+	color: orange;
+	background-color: #123456;
+	border-radius: 5px;
+}
+div{
+	color:black; 
+	border:1px solid;
+	text-align: center;
+	margin: auto;
+	max-width: 600px;
+	background-color: #abcdef;
+}	
+button {
+	width: 9%;
+	height: 60px;
+	margin: 2px;
+}
+input[type=checkbox] {
+	transform: scale(1.5);
+	margin: 10px;
+}
