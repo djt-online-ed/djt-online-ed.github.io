@@ -78,8 +78,8 @@ function checkAnswer(picked) {
 	var row = document.getElementById("inarow");
 	row.innerHTML = " ";
 	for (i in lastfew){
-		if (lastfew[i]) { row.innerHTML += "<img src=\"correct.png\">" }
-		else { row.innerHTML += "<img src=\"incorrect.png\">" }
+		if (lastfew[i]) { row.innerHTML += "<img src=\"correct.png\" style=\"width: 50px;\">" }
+		else { row.innerHTML += "<img src=\"incorrect.png\" style=\"width: 50px;\">" }
 	}
 	if (result) { label.innerHTML = "\\(" + newtext + " = " + a + "\\) Correct!" }
 	else { label.innerHTML = "\\(" + newtext + " \\neq " + a + "\\) Incorrect, try again"}

@@ -117,10 +117,10 @@ function checkAnswer(picked) {
 	row.innerHTML = " ";
 	for (i in lastfew){
 		if (lastfew[i]) {
-			row.innerHTML += "<img src=\"correct.png\">"
+			row.innerHTML += "<img src=\"correct.png\" style=\"width: 50px;\">"
 		}
 		else {
-			row.innerHTML += "<img src=\"incorrect.png\">"
+			row.innerHTML += "<img src=\"incorrect.png\" style=\"width: 50px;\">"
 		}
 	}
 	if (result) {
