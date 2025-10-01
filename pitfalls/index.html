@@ -45,8 +45,8 @@ One of the most common errors I see from algebra up through Calculus II is distr
 
 |Examples|Rule|
 |:-:|:-:|
-|\((a+b)n = an+bn\) <br><br> \((a-b)n = an-bn\) <br><br> \(\dfrac{a+b}{n} = \dfrac{a}{n} + \dfrac{b}{n}\) <br><br> $\dfrac{a-b}{n} = \dfrac{a}{n} - \dfrac{b}{n}$|Here is the original distributive property you learned: Multiplying distributes over addition. It's worth noting here that denominators don't "split" in this way, that is, $\dfrac{a}{b+c} \neq \dfrac{a}{b} + \dfrac{a}{c}$. To see why, remember that division is just a kind of multiplication. $\dfrac{a+b}{n}$ distributes because it is equal to $(a+b)\frac{1}{n}$, while $\dfrac{a}{b+c}$ becomes $a\dfrac{1}{b+c}$ and there is nothing to distribute.|
-|$(a \cdot b)^n = a^n \cdot b^n$ <br><br> $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}$ <br><br> $(\dfrac{a}{b})^n = \dfrac{a^n}{b^n}$ <br><br> $\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$|Powers distribute over multiplication. If something distributes, it also "undistributes". Any of these identities can be reversed, so that for instance, $a^nb^n$ can be replaced with $(ab)^n$.|
+|\((a+b)n = an+bn\) <br><br> \((a-b)n = an-bn\) <br><br> \(\dfrac{a+b}{n} = \dfrac{a}{n} + \dfrac{b}{n}\) <br><br> $\dfrac{a-b}{n} = \dfrac{a}{n} - \dfrac{b}{n}$|Here is the original distributive property you learned: Multiplying distributes over addition. <br><br> Caution: $\textcolor{orange}{\dfrac{n}{a+b} \neq \dfrac{n}{a} + \dfrac{n}{b}}$.|
+|$(a \cdot b)^n = a^n \cdot b^n$ <br><br> $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \cdot \sqrt[n]{b}$ <br><br> $(\dfrac{a}{b})^n = \dfrac{a^n}{b^n}$ <br><br> $\sqrt[n]{\dfrac{a}{b}} = \dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}$|Powers distribute over multiplication. If something distributes, it also "undistributes". Any of these identities can be reversed, so that for instance, $a^nb^n$ can be replaced with $(ab)^n$.<br><br> Caution: $\textcolor{orange}{\dfrac{a}{b} \neq \dfrac{a^n}{b^n}}. $|
 |$\textcolor{orange}{(a+b)^n \neq a^n + b^n}$ <br><br> $\textcolor{orange}{\sqrt[n]{a+b} \neq \sqrt[n]{a} + \sqrt[n]{b}}$ <br><br> $\textcolor{orange}{(a-b)^n \neq a^n - b^n}$ <br><br> $\textcolor{orange}{\sqrt[n]{a-b} \neq \sqrt[n]{a} - \sqrt[n]{b}}$|However, powers do NOT distribute over sums! You can prove this to yourself by a counterexample: Is it true that $(3+5)^2=3^2+5^2$ ? Or that $\sqrt{16+9}=\sqrt{16}+\sqrt{9}$? Just one counterexample is enough to prove one of these "theorems" false and unreliable.|
 |$\textcolor{orange}{\log(a-b) \neq \log(a) - \log(b)}$ <br><br> $\textcolor{orange}{\sin(\dfrac{a}{b}) \neq \dfrac{\sin(a)}{\sin(b)}}$ <br><br> $\textcolor{orange}{f(a+b) \neq f(a) + f(b)}$ <br><br> $\textcolor{orange}{g(ab) \neq ag(b) \neq g(a)g(b)}$|In general, functions do not distribute over any operation.|
 |$\textcolor{orange}{a+(b+c) \neq (a+b) + (a+c)}$ <br><br> $\textcolor{orange}{a(bc) \neq (ab)(ac)}$|Operations also do not distribute over themselves.|
@@ -99,7 +99,7 @@ We could try other numbers to see this. For instance, if two numbers have a prod
 
 Suppose we are trying to solve the equation $8x−x^2=15$.
 
-We immediately go astray if we write $\textcolor{orange}{x(8-x) = 15}$. It's not an error, but the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{orange}{x=15}$ or $\textcolor{orange}{8-x=15}$. Neither of these answers check.
+We immediately go astray if we write $\textcolor{orange}{x(8-x) = 15}$. It's not wrong per se, and normally it's an okay strategy! In solving most equations, we do like to have all variables to one side and all constants to the other. In this form though, the product of x and x-8 being 15 tells us nothing useful about x or 8-x. It _would_ be an error to conclude that $\textcolor{orange}{x=15}$ or $\textcolor{orange}{8-x=15}$. Neither of these answers check.
 
 Instead, to solve $8x-x^2=15$, we should recognize this as quadratic and put it into standard form:
 
@@ -210,8 +210,6 @@ $  x^2 = 9 $
 $ \Leftrightarrow x = \pm 3 $
 
 
-
-
 ## Calculus: Operators
 
 The big three operations in calculus are limits, derivatives, and integrals. The latter two are what are called 'operators' and for our purposes we will consider the first to be of this same kind. Operators are not variables, nor are they functions, but one step above functions.
@@ -222,9 +220,15 @@ functions, such as $f$ and $g$, which take as input...
 
 variables, such as $x$, $t$, and $\theta$.
 
-function(input) = output. Functions always come first, THEN with its input immediately to the right of it. We write f(3) = 8, not (3)f = 8 nor 3(f) = 8. Function evaluation is not multiplication.
+In standard notation, _function(input) = output_. Functions always come first, THEN with its input immediately to the right of it. We write f(3) = 8, not (3)f = 8 nor 3(f) = 8. Function evaluation is not multiplication.
 
-In the same way, operator(input) = output. Operators always come first, THEN the input, usually itself a function, outputting a different function. $ \dfrac{d}{dx}( )$ is an operator. It says of whatever function is supplied, "Take the derivative with respect to x". $\dfrac{d}{dx}(y)$ operates and produces $\dfrac{dy}{dx}$. But $(y)\dfrac{d}{dx}$ and $y (\dfrac{d}{dx})$ do not make sense.
+In the same way, _operator(input) = output_. Operators always come first, THEN the input, usually itself a function, outputting a different function. 
+
+$ \dfrac{d}{dx}( )$ is an operator. It says of whatever function is supplied, "Take the derivative with respect to x". 
+
+$\dfrac{d}{dx}(y)$ operates and produces $\dfrac{dy}{dx}$. 
+
+But $(y)\dfrac{d}{dx}$ and $y (\dfrac{d}{dx})$ do not make sense.
 
 In calculus we discover that all three of limits, derivatives, and integrals (and a few other operators) are all "Linear". $L$ is a linear operator if, for any constant $c$ and any real numbers $x$ and $y$, we have $L(cx)=cL(x)$ and $L(x+y)=L(x)+L(y)$. In other words, linear operators distribute over or "respect" sums and differences, and constant multiples can float in and out of L. Any other properties of L are possible but not guaranteed. We cannot say in general that $L(xy)=L(x)L(y)$, for instance. This is true of limits, but not derivatives or integrals.
 
