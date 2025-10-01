@@ -212,7 +212,7 @@ $ \Leftrightarrow x = \pm 3 $
 
 
 
-## Calculus: Linear operators
+## Calculus: Operators
 
 The big three operations in calculus are limits, derivatives, and integrals. The latter two are what are called 'operators' and for our purposes we will consider the first to be of this same kind. Operators are not variables, nor are they functions, but one step above functions.
 
@@ -221,6 +221,10 @@ Operators such as $\lim$, $\dfrac{d}{dx}$, and $\int$, take as input...
 functions, such as $f$ and $g$, which take as input...
 
 variables, such as $x$, $t$, and $\theta$.
+
+function(input) = output. Functions always come first, THEN with its input immediately to the right of it. We write f(3) = 8, not (3)f = 8 nor 3(f) = 8. Function evaluation is not multiplication.
+
+In the same way, operator(input) = output. Operators always come first, THEN the input, usually itself a function, outputting a different function. $ \dfrac{d}{dx}( )$ is an operator. It says of whatever function is supplied, "Take the derivative with respect to x". $\dfrac{d}{dx}(y)$ operates and produces $\dfrac{dy}{dx}$. But $(y)\dfrac{d}{dx}$ and $y (\dfrac{d}{dx})$ do not make sense.
 
 In calculus we discover that all three of limits, derivatives, and integrals (and a few other operators) are all "Linear". $L$ is a linear operator if, for any constant $c$ and any real numbers $x$ and $y$, we have $L(cx)=cL(x)$ and $L(x+y)=L(x)+L(y)$. In other words, linear operators distribute over or "respect" sums and differences, and constant multiples can float in and out of L. Any other properties of L are possible but not guaranteed. We cannot say in general that $L(xy)=L(x)L(y)$, for instance. This is true of limits, but not derivatives or integrals.
 
