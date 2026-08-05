@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Thoughts on AI</title>
+<script>window.texme = { style: 'none' }</script>
+<script src="https://cdn.jsdelivr.net/npm/texme@1.2.2"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<body>
+<textarea>
+
+# Thoughts on AI
+
+> "I've come up with a set of rules that describe our reactions to technologies:
+> 1. Anything that is in the world when you’re born is normal and ordinary and is just a natural part of the way the world works.
+> 2. Anything that's invented between when you’re fifteen and thirty-five is new and exciting and revolutionary and you can probably get a career in it.
+> 3. Anything invented after you're thirty-five is against the natural order of things."
+>
+> -Douglas Adams, The Salmon of Doubt: Hitchhiking the Galaxy One Last Time (2002)
+
+A lot has been written about AI. I'm going to write some more. I, a human being, put the following words together in this order. This is me, my voice, and my experience. No AI was used in generating or revising any of this text. Recently someone posed as me with the goal of getting into one of my bank accounts. That's how I feel whenever I ask a machine to talk or write or think for me. Ownership, authorship, and original thought will always matter on an existential level. What you and I think and say and write matters, and that's why I assign written work.
+
+Because this technology is changing every day, so also my thoughts and this page may change over time. Like any technology, AI carries potential for good and bad, and we must look at the good use cases and determine if they are worth the cost.
+
+## How do we know anything?
+
+I grew up in the 1990's, when school tried and failed to get me to go to the library. Then by the 2000's it was taken for granted that "Google knew everything". The way we engaged with information changed radically. At first, Google didn't try to answer your question. It was a search engine, not an answer engine. It only listed some links. You would usually find what you were looking for on the first page of results. If you wanted your product or answer to show up on that first page, you made sure it had an internal quality to it and/or you used SEO (Search engine optimization).
+
+Since "AI" has become a marketing term, slapped onto every new product, we need to be more specific about what kind of AI we are dealing with. I am not talking here about Machine Learning or Neural Networks, which can be geared to a wide range of specific tasks. The most relevant form of AI for this discussion, and the most common one you will encounter, are the kind that input and output text, called LLMs (Large Language Models).
+
+LLMs fundamentally operate by asking repeatedly "based on my training and based on the last x words, which word is most likely to come next?" and then writing that word. 3Blue1Brown has [a brief video](https://www.youtube.com/watch?v=LPZh9BOjkQs) and a [whole series](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) explaining LLMs. Chapter 7 makes the case that they can store and retrieve a surprising number of "facts".
+
+But what it considers fact is based on the data it was trained on. If it's fed garbage data, its "facts" will be equally garbage. But even if it was fed only truth, it cannot discover new truths; it was never designed to. LLMs are only designed to generate sentences that make grammatical sense and simulate a conversation. They cannot generate meaning. ["Colorless green ideas sleep furiously"](https://en.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously) is a famous example of a grammatically correct but nonsensical statement. To an LLM, that sentence makes as much sense as any other sentence on this page.
+
+To make matters worse, the web is now flooded with LLM-generated text designed to dominate at SEO only, not truth or clarity. This makes Google and all other search engines just about useless, along with future LLM models, as they will inevitably train on LLM output, so that the data will degrade in much the same way that [a JPEG image degrades on repeated compression.](https://xkcd.com/1683/) Even if we could guarantee a fidelity of information, certain LLMs have demonstrated bias based on who owns them and what they're trained on. Someone with enough money and influence could generate enough instances of a lie on the web that any model trained on the web begins to present it as truth. But they don't even need to do that. Most LLMs have a tendency to be sycophants, that is, they tend to side with the user's beliefs. It has long been the case that if you say the right words, [the internet will tell you exactly what you want to hear.](./facts.png)
+
+## Processing power
+
+[Saying please and thank you to ChatGPT costs millions of dollars, CEO says - USA Today](https://www.usatoday.com/story/tech/2025/04/22/please-thank-you-chatgpt-openai-energy-costs/83207447007/)
+
+[America's largest power grid is struggling to meet demand from AI - Reuters](https://www.reuters.com/sustainability/boards-policy-regulation/americas-largest-power-grid-is-struggling-meet-demand-ai-2025-07-09/)
+
+[What do Google's AI answers cost the environment? - Scientific American](https://www.scientificamerican.com/article/what-do-googles-ai-answers-cost-the-environment/)
+
+In 2024, out of curiosity I tried running an LLM on my home computer. The simplest model I could find took up 4 GB of disk space. I had 16 GB of RAM which is sufficient for most modern video games (at least around 2020). I gave the LLM a simple prompt and it swiftly consumed all my RAM and crashed my computer. I upgraded to 64GB RAM, more than I will ever need, and was able to play with it for a while, but at every prompt my machine would freeze for about 15 seconds before generating. The results were always subpar and I couldn't help but think that I was rapidly eating up the lifespan of the parts of my computer. I figured it was better to use remote services on machines that are designed to handle it.
+
+I eventually found some more lightweight programs and models, and with time we may streamline and make the process more cost effective, but this gives you an idea of just how much processing power is consumed with each prompt sent. [Even ChatGPT agrees it's expensive.](https://chatgpt.com/share/6899ffaf-6390-800d-9bbd-37088fc5de61) Somebody has to pay for the hardware and electricity, and the service wants you to be that person, and would love it if you became dependent on it. We are conditioned for instant gratification. We want answers NOW, even if it ends up costing money, one time or subscription (and they are invariably harvesting the data you trust them with. As the old saying goes, "If it's free, you're the product." For security's sake, never enter sensitive, personally identifiable information into an LLM.)
+
+It comes back to necessity. I have reached for LLMs to answer questions (such as technical or coding questions) which, if I had taken a moment to think, I would have known where to look to get quick, direct, free answers (such as the documentation.) I do not want to participate in a waste of money or electricity, even if it's one that's out of sight and out of mind. Always ask yourself, do you **need** AI for this? (The answer is no.)
+
+## Winning at chess without knowing the rules
+
+I require written assignments as a component of all my classes, because an overlooked aspect of mathematics is good communication. You are arguing a case. You are walking through your thought process in order to prove not just some result, but that you know what you're doing. To have any value, a true proof must be ironed out until it is flawless. Any lapse in reasoning calls the whole logical argument into question.
+
+Everyone including me has felt like taking shortcuts to avoid learning. In the past, students would copy each other's work, go to Chegg or other online tutors who would do the work for you, or enter problems into automatic solvers like Symbolab which would generate convoluted and difficult-to-follow solutions. Now LLMs can write whole essays, and by using additional math reasoning tools, can produce a correct fully explained solution to virtually any problem in any textbook.
+
+All of these shortcuts remind me of a way to cheat at chess, where you start two simultaneous games with two different players of as high a skill level as you want. You play one game as white and the other as black. Whatever move the first opponent as white plays, you make that same move in the other game. Whatever reply the opponent as black makes, you make that reply in the other game, and so on. If you don't make any mistakes, you will win one game and lose the other, or draw both games. And you can do this without knowing anything about the rules of chess. It may look impressive, but you are reducing yourself to a postal service, and you'll get crushed in an honest game.
+
+This is what it is like to take a problem I assign, feed it to an LLM, and pass off its output as your own and send it to me. Usually the work will need corrections. Now imagine taking my feedback, like "there's an error on this line", and reopening the LLM and asking it to revise its work. Will it detect its own error? And if it does, why didn't it give the right answers initially? And how do we know it checked its own work correctly? Could it "find" an error that wasn't there if the user insists hard enough that there is one? The LLM's job is to be helpful, after all.
+
+(For my part, I write all my own lessons, problems, tests, and keys. I do not use AI to write or grade any class content. Additionally, in all my classes, tests are in-person, paper-and-pencil, no technology allowed. One advantage to you is that this is equitable. Nobody has an edge over anyone else due to having a subscription to a better service.)
+
+At some point in your education you may have heard that you "need to take responsibility for your own learning". This is now a matter of self-defense. AI is no longer just a temptation, it is being forced upon you. We reach for a search engine for some resources, but they have all turned into answer engines that do all the work for us. As an independent learner, you should recognize how harmful this is to you. For instance, if you are trying to use spaced repetition to remember facts, the worst thing that can happen is seeing the answer before you've had time to search your memory for it. [Study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11020077/) after [study](https://arxiv.org/pdf/2506.08872v1) after [study](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4895486) shows that AI's effects on learning are overwhelmingly negative. **LLMs cause literal brain damage.**
+
+## Are there any positives?
+
+So far my assessment of LLMs seems grim across the board. Is there any situation where I would recommend its use? To answer this, let's go back to basics. Everyone in my generation learned multiplication tables and the algorithms for adding and multiplying 2- and 3- digit numbers. I enjoyed it, most others did not and may have wondered what the point was. It is that "automating" these in our minds frees our memory and processing for greater tasks. We got calculators only AFTER we mastered these basics. If we were given calculators too early, we would have forgotten everything, and we would have no ability to sense-check the calculator's output. [Handwriting is better for the brain.](https://www.scientificamerican.com/article/why-writing-by-hand-is-better-for-memory-and-learning/)
+
+When it comes to multiplication of decimal numbers with eight significant figures each, our instinct rightly says this is best entrusted to a calculator. In lectures I always try to point out when I make this decision. So one of my goals is to show how to choose and use the best tool for the job. Along with our pocket calculator, LLMs are tools. But like all tools, it is only as smart as the user. The best calculator in the world is useless in the hands of one who doesn't know how it works. If you dive in to the math involved in LLMs, Neural networks and machine learning (it's a lot of linear algebra), you will understand exactly how AI works and what its limitations are. With enough work, you will even be able to create your own models to assist you in specific goals. Terence Tao has written extensively on positive use cases for AI, even at the highest levels of mathematical research, [at his blog](https://terrytao.wordpress.com/mastodon-posts/).
+
+Personally, I have found LLMs useful in only a few things: Image processing, code generation, and determining whether an interesting kind of problem I encountered in real life has a name and known solution methods. [This](https://chatgpt.com/share/6a737225-dd48-83ea-b98a-d16ea3e43608) and [this](https://chatgpt.com/share/6a737219-b8a4-83ea-a7dd-87daa27767ae) and [this](https://chatgpt.com/share/6a7372b0-4a60-83ea-b7c8-d684c3c8a031) are a few examples. If I am trying to learn a topic, I start with textbooks and exercises. If I'm still stuck, I go to a search engine. And only after these fail, I will put the question to an LLM, and even then it may not help.
+
+One of my professors was fond of saying "The best mathematicians are lazy". Meaning, they are always looking for the easy way, the solution that takes the least work. I said this for a while but I find myself having to qualify it more and more with time. Yes, math was designed to make our lives easier, and it can, as long as we learn it properly. I invite you to class because **I want to show you the easy way**! I'm decades familiar with this content. I've learned a dozen different ways to express concepts and solve problems, and I want to point you in the direction of the best ones. More than that, I want to teach you how to learn. LLMs cannot provide this. Specific concepts taught with clarity can only be found in a textbook, a demonstration, or anything with a **person** as the crucial ingredient. But even if there were a perfect LLM teacher, the best teacher and best explanations in the world mean nothing if you do nothing. There are no shortcuts. The easiest way is the longest way. Math must be done to be learned. 
+
+</textarea>
+</body>
+</html>
