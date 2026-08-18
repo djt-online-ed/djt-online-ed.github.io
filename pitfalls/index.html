@@ -166,16 +166,15 @@ $ \sin x^2 + 3 $
 
 What is meant here? Is it $ \sin(x^2) + 3 $ or $ \sin(x^2 + 3) $? In other words, what is the argument of the sin function: $ x^2 $ or $ x^2 + 3 $?
 
-The rule of thumb is that, in the absence of parentheses **the argument is the first whole term after the function** (Using "term" in the sense discussed in the Polynomials section). Terms are separated by +-, so the first whole term is $ x^2 $. I have not known this rule to fail.
-If the writer intends to communicate $ \sin(x^2+3) $, that is how it should be written, with parentheses.
+The rule of thumb is that, in the absence of parentheses **the argument is the first whole term after the function** (Using "term" in the sense discussed in the Polynomials section). Terms are separated by +-, so the first whole term is $ x^2 $. Therefore $ \sin x^2 + 3 $ should be interpreted as $ \sin ( x^2 ) + 3 $. I have not known this rule to fail. If the writer intends to communicate $ \sin(x^2+3) $, that is how it should be written, with parentheses.
 
 Good so far? Now consider the common expression: $ \sin^2 x $. What is meant here? Are we squaring the function? The short answer is, $ \sin^2 x $ **is our notation for** $ (\sin x)^2. $ Again, the mathematician wants to drop the parentheses because _who has time to write those extra two strokes_? But without them, we get $ \sin x^2 $, which according to the above rule of thumb would equal $ \sin(x^2) $, which is not equal to $ (\sin x)^2 $, the expression we meant to communicate. So to avoid that, the mathematician, against all common sense, scoots the 2 on top of the sin function, and then so did everyone else, probably.
 
 In general, when you see a trig function raised to a positive integer and then the argument, like $ \mathrm{trig}^n (x)$ , this is shorthand for $(\mathrm{trig}(x))^n $. So for instance, $ \tan^4(x) = (\tan(x))^4 $.
 
-Okay! So if we see $ \sin^{-1}(x)$, that should equal $ (\sin(x))^{-1} = \dfrac{1}{\sin(x)} $... right? 
+Okay! So if we see $ \sin^{-1}(x)$, that should equal $ (\sin(x))^{-1} = \dfrac{1}{\sin(x)} $... right?
 
-I would absolutely forgive you for thinking so. <!--(Note that we already have a name for $ 1 / \sin(x)$, it's $ \csc(x) $. )--> Unfortunately $f^{-1}(x)$ is a notation reserved for stating the inverse of a given function, something very different from a reciprocal. Argh! Do words and numbers mean anything anymore? Should we throw out using $x^{-1} = 1/x$?
+I would absolutely forgive you for thinking so. Unfortunately $f^{-1}(x)$ is a notation reserved for stating the _inverse_ of a given function, something very different from a reciprocal. 🤬 Do words and numbers mean anything anymore? Should we throw out using $x^{-1} = 1/x$?
 
 Fortunately, just as in language, **context can lock an ambiguous expression into a specific meaning.** We don't have to guess at what a superscript of -1 means as long as we know what kind of object it's on top of:
 $ x^{-1} = 1/x $ because $x$ is a variable or number.
@@ -183,13 +182,16 @@ $ f^{-1}(x) \neq 1/f(x) $ because $f$ is a function. Finding an inverse of $f$ i
 
 In trigonometry, $ \sin^{-1}(x) $ and $ \arcsin(x) $ mean the same thing, and I much prefer teaching the latter. It retains the "related but different function" meaning. Could we add "arc" to the front of any function to make it into its inverse? It's not standard. But math notation, like all language, evolves over time. What is standard today may become antiquated in favor of a better notation, and you can participate in that process! Just keep in mind the ultimate goal: that the reader knows exactly what you mean by what you write.
 
-For another example of this, in the following work there's an error in communication:
+(Note also that we already have names for the reciprocals of each trig function: $ 1 / \sin(x) = \csc(x) $. )
+
+
+Finally, in the following work there's an error in communication:
 
 $ x^2 = 9 $
 
 $ = x = \pm 3 $
 
-Taken literally this seems to be saying that $9= \pm 3$. But it's likely the writer probably meant:
+Taken literally this seems to be saying that $9= \pm 3$. But the writer probably meant:
 
 $x^2$ is $9$,
 
@@ -264,7 +266,6 @@ Here is an exercise: Draw a large circle. Then repeatedly, draw a point on the e
 A working formula exists, and you may want to spend more time to try and develop it (though it does require combinatorics.) 
 
 (Spoilers!) The solution can be found [here](https://mathworld.wolfram.com/CircleDivisionbyChords.html) , and there is also [a great song](https://www.youtube.com/watch?v=NOCsdhzo6Jg) about this and other patterns.
-
 
 </textarea>
 </body>
